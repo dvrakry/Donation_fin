@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.donate.mappers.supportMapper">
+<sql id="base">
+from don_support where 
+</sql>
+	<insert id="sreg" parameterType="svo">
+		insert into don_support 
+		(thumb, pname, price)
+		values
+		(#{thumb},#{pname},#{price})
+	</insert>
+	<select id="list" resultType="svo">
+		select sno, pname, price, thumb from don_support
+	</select>
+	<delete id="rm" parameterType="java.lang.Integer">
+		delete from don_support where sno=#{sno}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+

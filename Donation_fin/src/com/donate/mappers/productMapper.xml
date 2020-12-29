@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.donate.mappers.productMapper">
+<sql id="base">
+from don_product where 
+</sql>
+	<insert id="reg" parameterType="pvo">
+		insert into don_product 
+		(pname, price, imgfile,thumb)
+		values
+		(#{pname},#{price},#{imgfile},#{thumb})
+	</insert>
+	<select id="list" resultType="pvo" parameterType="paging">
+		select pno, pname, price, thumb from don_product
+		limit #{startNo}, #{pageSize}
+	</select>
+	<select id="info" parameterType="java.lang.Integer" resultType="pvo">
+		select * from don_product where pno=#{pno}
+	</select>
+	<select id="cnt" resultType="java.lang.Integer">
+		select count(pno) from don_product
+	</select>
+	<update id="mod" parameterType="pvo">
+		update don_product set
+		 pname=#{pname}, price=#{price},imgfile=#{imgfile},thumb=#{thumb}
+		 where pno=#{pno}
+	</update>
+	<delete id="rm" parameterType="java.lang.Integer">
+		delete from don_product where pno=#{pno}
+	</delete>
+</mapper>
+
+
+
+
+
+
+
+

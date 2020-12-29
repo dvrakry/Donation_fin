@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+   <typeAlias type="com.donate.domain.InsVO" alias="ivo"/>
+   <typeAlias type="com.donate.domain.CommentVO" alias="cvo"/>
+   <typeAlias type="com.donate.domain.ReportVO" alias="rvo"/>
+   	<typeAlias type="com.donate.domain.MemberVO" alias="mvo"/>
+	<typeAlias type="com.donate.domain.BoardVO" alias="bvo"/>
+	<typeAlias type="com.donate.domain.Paging" alias="paging"/>
+	<typeAlias type="com.donate.domain.ProductVO" alias="pvo"/>
+	<typeAlias type="com.donate.domain.SupportVO" alias="svo"/>
+   
+</typeAliases>
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC"/>
+      <dataSource type="POOLED">
+        <property name="driver" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/donation_db"/>
+        <property name="username" value="donation"/>
+        <property name="password" value="mysql"/>
+      </dataSource>
+    </environment>
+  </environments>
+  <mappers>
+    <mapper resource="com/donate/mappers/insMapper.xml"/>
+    <mapper resource="com/donate/mappers/commentMapper.xml"/>
+    <mapper resource="com/donate/mappers/reportMapper.xml"/>
+    <mapper resource="com/donate/mappers/memberMapper.xml"/>
+    <mapper resource="com/donate/mappers/boardMapper.xml"/>
+    <mapper resource="com/donate/mappers/productMapper.xml"/>
+    <mapper resource="com/donate/mappers/supportMapper.xml"/>
+    
+  </mappers>
+</configuration>

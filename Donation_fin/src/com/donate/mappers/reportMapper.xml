@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.donate.mappers.reportMapper">
+	<insert id="reg">
+		insert into don_report (name,product,price,count,ins)
+		values(#{name},#{product},#{price},#{count},#{ins})
+	</insert>
+	
+	<select id="list" resultType="rvo">
+		select * from don_report
+	</select>
+	<delete id="rm">
+		delete from don_support
+	</delete>
+</mapper>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.donate.mappers.boardMapper">
+	<insert id="reg" parameterType="bvo"> <!-- 이건 실제주소값 -->
+		insert into don_board (bid, iname, bperson, bcontent, imgfile, thumb)
+		values (#{bid},#{iname},#{bperson},#{bcontent}, #{imgfile}, #{thumb})
+	</insert>
+	
+	<select id="cnt" resultType="java.lang.Integer">
+		select count(bno) 
+		from don_board
+	</select>
+	
+	<select id="list" resultType="bvo" parameterType="paging">
+		select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid
+		from don_board
+		limit #{startNo}, #{pageSize}
+	</select>
+	<select id="info" parameterType="java.lang.Integer" resultType="bvo">
+		select *
+		from don_board
+		where bno = #{bno}
+	</select>
+	<update id="edit">
+		update don_board
+		set bperson = #{bperson}, bcontent = #{bcontent}, moddate = now(), imgfile = #{imgfile}, thumb = #{thumb}
+		where bno = #{bno}
+	</update>
+	<delete id="delete" parameterType="java.lang.Integer">
+		delete from don_board
+		where bno = #{bno}
+	</delete>
+	
+</mapper>

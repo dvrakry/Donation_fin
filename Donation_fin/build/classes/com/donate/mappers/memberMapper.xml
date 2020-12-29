@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.donate.mappers.memberMapper">
+	<insert id="join" parameterType="mvo"> <!-- 이건 실제주소값 -->
+		insert into don_member (mname, mid, mpwd, mphone, mins)
+		values (#{mname},#{mid},#{mpwd},#{mphone}, #{mins})
+	</insert>
+	<select id="login" parameterType="mvo" resultType="mvo">
+	    select mname, mid, mphone, mins
+	    from don_member
+	    where mid=#{mid} 
+        and mpwd=#{mpwd}
+	</select>
+	<select id="list" resultType="mvo">
+		select mname, mid, mphone, mins
+		from don_member
+	</select>
+	<select id="info" parameterType="java.lang.String" resultType="mvo">
+		select mid, mname, mpwd, mphone 
+		from don_member
+		where mid = #{mid} 
+	</select>
+	<select id="midCount" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select count(mid)
+		from don_member
+		where mid = #{mid}
+	</select>
+	<delete id="delete" parameterType="java.lang.String">
+		delete from don_member
+		where mid = #{mid}
+	</delete>
+	<update id="edit" parameterType="mvo"> <!-- 인서트 업데이트 리무브의 리절트는 알아서 인트 -->
+		update don_member
+		set mname = #{mname}, mpwd = #{mpwd}, mphone = #{mphone}
+		where mid = #{mid}
+	</update>
+</mapper>

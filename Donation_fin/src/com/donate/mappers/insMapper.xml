@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.donate.mappers.insMapper">
+	<insert id="reg" parameterType="ivo">
+		insert into don_ins(iname, loc, ipeople, icnt, imgfile, thumb, represent)
+		values(#{iname},#{loc},#{ipeople},#{icnt},#{imgfile},#{thumb},#{represent})
+	</insert>
+	<select id="list" resultType="ivo">
+		select ino, iname, thumb from don_ins
+	</select>
+	<select id="info" resultType="ivo">
+		select * from don_ins where ino=#{ino}
+	</select>
+	<update id="upd" parameterType="ivo">
+		update don_ins set iname=#{iname}, loc=#{loc}, ipeople=#{ipeople}, icnt=#{icnt}, imgfile=#{imgfile}, thumb=#{thumb}, represent=#{represent}
+		where ino=#{ino}
+	</update>
+	<delete id="rm" parameterType="java.lang.Integer">
+		delete from don_ins where ino=#{ino}
+	</delete>
+</mapper>

@@ -1,0 +1,1129 @@
+2020-12-29 11:09:47,537 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-8] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 11:09:48,215 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-8] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:09:48,216 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-8] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:09:48,216 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-8] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:09:48,217 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-8] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:09:48,698 INFO c.d.c.InsController [http-nio-8080-exec-8] >>> sv : list
+2020-12-29 11:09:48,731 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-8] Opening JDBC Connection
+2020-12-29 11:09:50,257 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-8] Created connection 285101718.
+2020-12-29 11:09:50,258 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-8] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@10fe4e96]
+2020-12-29 11:09:50,265 DEBUG c.d.m.i.list [http-nio-8080-exec-8] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 11:09:50,324 DEBUG c.d.m.i.list [http-nio-8080-exec-8] ==> Parameters: 
+2020-12-29 11:09:50,364 TRACE c.d.m.i.list [http-nio-8080-exec-8] <==    Columns: ino, iname, thumb
+2020-12-29 11:09:50,365 TRACE c.d.m.i.list [http-nio-8080-exec-8] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 11:09:50,375 TRACE c.d.m.i.list [http-nio-8080-exec-8] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 11:09:50,375 DEBUG c.d.m.i.list [http-nio-8080-exec-8] <==      Total: 2
+2020-12-29 11:09:55,042 INFO c.d.c.ProductController [http-nio-8080-exec-8] >>> sv : list
+2020-12-29 11:09:55,043 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-8] Opening JDBC Connection
+2020-12-29 11:09:55,120 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-8] Created connection 2054854507.
+2020-12-29 11:09:55,120 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-8] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7a7a976b]
+2020-12-29 11:09:55,121 DEBUG c.d.m.p.cnt [http-nio-8080-exec-8] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 11:09:55,122 DEBUG c.d.m.p.cnt [http-nio-8080-exec-8] ==> Parameters: 
+2020-12-29 11:09:55,126 TRACE c.d.m.p.cnt [http-nio-8080-exec-8] <==    Columns: count(pno)
+2020-12-29 11:09:55,127 TRACE c.d.m.p.cnt [http-nio-8080-exec-8] <==        Row: 2
+2020-12-29 11:09:55,129 DEBUG c.d.m.p.cnt [http-nio-8080-exec-8] <==      Total: 1
+2020-12-29 11:09:55,130 DEBUG c.d.m.p.list [http-nio-8080-exec-8] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 11:09:55,131 DEBUG c.d.m.p.list [http-nio-8080-exec-8] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:09:55,134 TRACE c.d.m.p.list [http-nio-8080-exec-8] <==    Columns: pno, pname, price, thumb
+2020-12-29 11:09:55,134 TRACE c.d.m.p.list [http-nio-8080-exec-8] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 11:09:55,135 TRACE c.d.m.p.list [http-nio-8080-exec-8] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 11:09:55,136 DEBUG c.d.m.p.list [http-nio-8080-exec-8] <==      Total: 2
+2020-12-29 11:09:57,855 INFO c.d.c.InsController [http-nio-8080-exec-9] >>> sv : list
+2020-12-29 11:10:00,080 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-6] Opening JDBC Connection
+2020-12-29 11:10:00,158 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-6] Created connection 1696756668.
+2020-12-29 11:10:00,158 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-6] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@652273bc]
+2020-12-29 11:10:00,159 DEBUG c.d.m.b.cnt [http-nio-8080-exec-6] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:10:00,160 DEBUG c.d.m.b.cnt [http-nio-8080-exec-6] ==> Parameters: 
+2020-12-29 11:10:00,161 TRACE c.d.m.b.cnt [http-nio-8080-exec-6] <==    Columns: count(bno)
+2020-12-29 11:10:00,161 TRACE c.d.m.b.cnt [http-nio-8080-exec-6] <==        Row: 0
+2020-12-29 11:10:00,162 DEBUG c.d.m.b.cnt [http-nio-8080-exec-6] <==      Total: 1
+2020-12-29 11:10:00,162 DEBUG c.d.m.b.list [http-nio-8080-exec-6] ==>  Preparing: select bno, iname , bregdate, bmoddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:10:00,163 DEBUG c.d.m.b.list [http-nio-8080-exec-6] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:10:03,840 INFO c.d.c.InsController [http-nio-8080-exec-9] >>> sv : list
+2020-12-29 11:10:04,621 INFO c.d.c.InsController [http-nio-8080-exec-6] >>> sv : detail
+2020-12-29 11:10:04,623 DEBUG c.d.m.i.info [http-nio-8080-exec-6] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 11:10:04,624 DEBUG c.d.m.i.info [http-nio-8080-exec-6] ==> Parameters: 1(Integer)
+2020-12-29 11:10:04,626 TRACE c.d.m.i.info [http-nio-8080-exec-6] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 11:10:04,626 TRACE c.d.m.i.info [http-nio-8080-exec-6] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 11:10:04,627 DEBUG c.d.m.i.info [http-nio-8080-exec-6] <==      Total: 1
+2020-12-29 11:10:04,840 INFO c.d.c.CommentController [http-nio-8080-exec-4] >>ctxPath : /Donation
+2020-12-29 11:10:04,840 INFO c.d.c.CommentController [http-nio-8080-exec-4] >>svlPath : /comment
+2020-12-29 11:10:04,840 INFO c.d.c.CommentController [http-nio-8080-exec-4] check2
+2020-12-29 11:10:04,841 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-4] Opening JDBC Connection
+2020-12-29 11:10:04,906 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-4] Created connection 1034362537.
+2020-12-29 11:10:04,907 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-4] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3da71ea9]
+2020-12-29 11:10:04,908 DEBUG c.d.m.c.list [http-nio-8080-exec-4] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 11:10:04,909 DEBUG c.d.m.c.list [http-nio-8080-exec-4] ==> Parameters: 1(Integer)
+2020-12-29 11:10:04,910 TRACE c.d.m.c.list [http-nio-8080-exec-4] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 11:10:04,911 TRACE c.d.m.c.list [http-nio-8080-exec-4] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 11:10:04,912 DEBUG c.d.m.c.list [http-nio-8080-exec-4] <==      Total: 1
+2020-12-29 11:10:04,921 INFO c.d.c.CommentController [http-nio-8080-exec-4] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 11:10:12,139 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-10] Opening JDBC Connection
+2020-12-29 11:10:12,193 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-10] Created connection 1935098349.
+2020-12-29 11:10:12,194 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-10] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@735741ed]
+2020-12-29 11:10:12,198 DEBUG c.d.m.m.login [http-nio-8080-exec-10] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 11:10:12,199 DEBUG c.d.m.m.login [http-nio-8080-exec-10] ==> Parameters: admin(String), 1111(String)
+2020-12-29 11:10:12,203 TRACE c.d.m.m.login [http-nio-8080-exec-10] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:10:12,203 TRACE c.d.m.m.login [http-nio-8080-exec-10] <==        Row: 관리자, admin, 1111, null
+2020-12-29 11:10:12,204 DEBUG c.d.m.m.login [http-nio-8080-exec-10] <==      Total: 1
+2020-12-29 11:10:12,204 INFO c.d.c.MemberController [http-nio-8080-exec-10] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@3c63e642
+2020-12-29 11:10:13,588 INFO c.d.c.InsController [http-nio-8080-exec-7] >>> sv : list
+2020-12-29 11:10:14,532 INFO c.d.c.InsController [http-nio-8080-exec-2] >>> sv : detail
+2020-12-29 11:10:14,710 INFO c.d.c.CommentController [http-nio-8080-exec-9] >>ctxPath : /Donation
+2020-12-29 11:10:14,710 INFO c.d.c.CommentController [http-nio-8080-exec-9] >>svlPath : /comment
+2020-12-29 11:10:14,710 INFO c.d.c.CommentController [http-nio-8080-exec-9] check2
+2020-12-29 11:10:14,711 INFO c.d.c.CommentController [http-nio-8080-exec-9] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 11:10:21,703 DEBUG c.d.m.m.list [http-nio-8080-exec-3] ==>  Preparing: select mname, mid, mphone, mins from don_member 
+2020-12-29 11:10:21,707 DEBUG c.d.m.m.list [http-nio-8080-exec-3] ==> Parameters: 
+2020-12-29 11:10:21,710 TRACE c.d.m.m.list [http-nio-8080-exec-3] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:10:21,711 TRACE c.d.m.m.list [http-nio-8080-exec-3] <==        Row: 관리자, admin, 1111, null
+2020-12-29 11:10:21,713 TRACE c.d.m.m.list [http-nio-8080-exec-3] <==        Row: tester1, tester1, 1234, 강남이젠
+2020-12-29 11:10:21,714 TRACE c.d.m.m.list [http-nio-8080-exec-3] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 11:10:21,714 DEBUG c.d.m.m.list [http-nio-8080-exec-3] <==      Total: 3
+2020-12-29 11:10:33,864 INFO c.d.c.InsController [http-nio-8080-exec-5] >>> sv : list
+2020-12-29 11:10:35,259 INFO c.d.c.InsController [http-nio-8080-exec-8] >>> sv : detail
+2020-12-29 11:10:35,539 INFO c.d.c.CommentController [http-nio-8080-exec-10] >>ctxPath : /Donation
+2020-12-29 11:10:35,539 INFO c.d.c.CommentController [http-nio-8080-exec-10] >>svlPath : /comment
+2020-12-29 11:10:35,541 INFO c.d.c.CommentController [http-nio-8080-exec-10] check2
+2020-12-29 11:10:35,544 INFO c.d.c.CommentController [http-nio-8080-exec-10] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 11:11:27,721 INFO c.d.c.InsController [http-nio-8080-exec-2] >>> sv : list
+2020-12-29 11:11:31,241 INFO c.d.c.InsController [http-nio-8080-exec-5] >>> sv : detail
+2020-12-29 11:11:31,422 INFO c.d.c.CommentController [http-nio-8080-exec-6] >>ctxPath : /Donation
+2020-12-29 11:11:31,422 INFO c.d.c.CommentController [http-nio-8080-exec-6] >>svlPath : /comment
+2020-12-29 11:11:31,423 INFO c.d.c.CommentController [http-nio-8080-exec-6] check2
+2020-12-29 11:11:31,423 INFO c.d.c.CommentController [http-nio-8080-exec-6] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 11:11:47,856 DEBUG c.d.m.b.list [http-nio-8080-exec-8] ==>  Preparing: select bno, iname , bregdate, bmoddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:11:47,857 DEBUG c.d.m.b.list [http-nio-8080-exec-8] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:11:50,593 INFO c.d.c.CommentController [http-nio-8080-exec-5] >>ctxPath : /Donation
+2020-12-29 11:11:50,596 INFO c.d.c.CommentController [http-nio-8080-exec-5] >>svlPath : /comment
+2020-12-29 11:11:50,598 INFO c.d.c.CommentController [http-nio-8080-exec-5] check2
+2020-12-29 11:11:50,600 INFO c.d.c.CommentController [http-nio-8080-exec-5] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 11:14:18,624 INFO c.d.c.InsController [http-nio-8080-exec-4] >>> sv : list
+2020-12-29 11:14:19,856 DEBUG c.d.m.b.list [http-nio-8080-exec-3] ==>  Preparing: select bno, iname , bregdate, bmoddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:14:19,859 DEBUG c.d.m.b.list [http-nio-8080-exec-3] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:14:24,033 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-1] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 11:14:24,384 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-1] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:14:24,384 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-1] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:14:24,384 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-1] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:14:24,385 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-1] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:14:24,721 INFO c.d.c.InsController [http-nio-8080-exec-6] >>> sv : list
+2020-12-29 11:14:24,761 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-6] Opening JDBC Connection
+2020-12-29 11:14:24,761 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-1] Opening JDBC Connection
+2020-12-29 11:14:25,281 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-1] Created connection 2106061959.
+2020-12-29 11:14:25,282 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-1] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7d87f487]
+2020-12-29 11:14:25,291 DEBUG c.d.m.b.cnt [http-nio-8080-exec-1] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:14:25,320 DEBUG c.d.m.b.cnt [http-nio-8080-exec-1] ==> Parameters: 
+2020-12-29 11:14:25,338 TRACE c.d.m.b.cnt [http-nio-8080-exec-1] <==    Columns: count(bno)
+2020-12-29 11:14:25,339 TRACE c.d.m.b.cnt [http-nio-8080-exec-1] <==        Row: 0
+2020-12-29 11:14:25,343 DEBUG c.d.m.b.cnt [http-nio-8080-exec-1] <==      Total: 1
+2020-12-29 11:14:25,344 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-6] Created connection 823694977.
+2020-12-29 11:14:25,344 DEBUG c.d.m.b.list [http-nio-8080-exec-1] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:14:25,345 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-6] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@31189681]
+2020-12-29 11:14:25,348 DEBUG c.d.m.b.list [http-nio-8080-exec-1] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:14:25,348 DEBUG c.d.m.i.list [http-nio-8080-exec-6] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 11:14:25,349 DEBUG c.d.m.i.list [http-nio-8080-exec-6] ==> Parameters: 
+2020-12-29 11:14:25,351 DEBUG c.d.m.b.list [http-nio-8080-exec-1] <==      Total: 0
+2020-12-29 11:14:25,354 TRACE c.d.m.i.list [http-nio-8080-exec-6] <==    Columns: ino, iname, thumb
+2020-12-29 11:14:25,355 TRACE c.d.m.i.list [http-nio-8080-exec-6] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 11:14:25,358 TRACE c.d.m.i.list [http-nio-8080-exec-6] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 11:14:25,359 DEBUG c.d.m.i.list [http-nio-8080-exec-6] <==      Total: 2
+2020-12-29 11:14:59,807 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-12] Opening JDBC Connection
+2020-12-29 11:14:59,854 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-12] Created connection 1862314319.
+2020-12-29 11:14:59,855 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-12] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6f00a94f]
+2020-12-29 11:14:59,856 DEBUG c.d.m.m.login [http-nio-8080-exec-12] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 11:14:59,858 DEBUG c.d.m.m.login [http-nio-8080-exec-12] ==> Parameters: tester1(String), 1111(String)
+2020-12-29 11:14:59,862 TRACE c.d.m.m.login [http-nio-8080-exec-12] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:14:59,862 TRACE c.d.m.m.login [http-nio-8080-exec-12] <==        Row: tester1, tester1, 1234, 강남이젠
+2020-12-29 11:14:59,863 DEBUG c.d.m.m.login [http-nio-8080-exec-12] <==      Total: 1
+2020-12-29 11:14:59,863 INFO c.d.c.MemberController [http-nio-8080-exec-12] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@3ebb6b0a
+2020-12-29 11:15:14,373 INFO c.d.c.BoardController [http-nio-8080-exec-8] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:15:14,374 INFO c.d.c.BoardController [http-nio-8080-exec-8] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:15:14,401 INFO c.d.c.BoardController [http-nio-8080-exec-8] >>>> uploadPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload\앵무새1.jpg
+2020-12-29 11:15:14,432 INFO c.d.c.BoardController [http-nio-8080-exec-8] 20201229111514
+2020-12-29 11:15:14,432 INFO c.d.c.BoardController [http-nio-8080-exec-8] >>>> FileName: 앵무새1.jpg
+2020-12-29 11:15:14,432 INFO c.d.c.BoardController [http-nio-8080-exec-8] >>>> uploadFileName: 20201229111514_앵무새1.jpg
+2020-12-29 11:15:14,798 DEBUG c.d.m.b.reg [http-nio-8080-exec-8] ==>  Preparing: insert into don_board (bid, iname, bperson, bcontent, imgfile, thumb) values (?,?,?,?, ?, ?) 
+2020-12-29 11:15:14,801 DEBUG c.d.m.b.reg [http-nio-8080-exec-8] ==> Parameters: tester1(String), 강남이젠(String), sass(String), asda(String), 20201229111514_앵무새1.jpg(String), s_20201229111514_앵무새1.jpg(String)
+2020-12-29 11:15:14,806 DEBUG c.d.m.b.reg [http-nio-8080-exec-8] <==    Updates: 1
+2020-12-29 11:15:14,807 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-8] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@7d87f487]
+2020-12-29 11:15:14,809 INFO c.d.c.BoardController [http-nio-8080-exec-8] >>> 상품등록 성공
+2020-12-29 11:15:14,810 DEBUG c.d.m.b.cnt [http-nio-8080-exec-8] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:15:14,810 DEBUG c.d.m.b.cnt [http-nio-8080-exec-8] ==> Parameters: 
+2020-12-29 11:15:14,812 TRACE c.d.m.b.cnt [http-nio-8080-exec-8] <==    Columns: count(bno)
+2020-12-29 11:15:14,812 TRACE c.d.m.b.cnt [http-nio-8080-exec-8] <==        Row: 1
+2020-12-29 11:15:14,812 DEBUG c.d.m.b.cnt [http-nio-8080-exec-8] <==      Total: 1
+2020-12-29 11:15:14,813 DEBUG c.d.m.b.list [http-nio-8080-exec-8] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:15:14,814 DEBUG c.d.m.b.list [http-nio-8080-exec-8] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:15:14,815 TRACE c.d.m.b.list [http-nio-8080-exec-8] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:15:14,816 TRACE c.d.m.b.list [http-nio-8080-exec-8] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:15:14.0, s_20201229111514_앵무새1.jpg, asda, sass, tester1
+2020-12-29 11:15:14,817 DEBUG c.d.m.b.list [http-nio-8080-exec-8] <==      Total: 1
+2020-12-29 11:15:29,945 DEBUG c.d.m.b.info [http-nio-8080-exec-17] ==>  Preparing: select * from don_board where bno = ? 
+2020-12-29 11:15:29,946 DEBUG c.d.m.b.info [http-nio-8080-exec-17] ==> Parameters: 1(Integer)
+2020-12-29 11:15:29,950 TRACE c.d.m.b.info [http-nio-8080-exec-17] <==    Columns: bno, iname, bregdate, moddate, imgfile, thumb, bid, bcontent, bperson
+2020-12-29 11:15:29,951 TRACE c.d.m.b.info [http-nio-8080-exec-17] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:15:14.0, 20201229111514_앵무새1.jpg, s_20201229111514_앵무새1.jpg, tester1, asda, sass
+2020-12-29 11:15:29,953 DEBUG c.d.m.b.info [http-nio-8080-exec-17] <==      Total: 1
+2020-12-29 11:20:16,362 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-16] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 11:20:16,621 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-16] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:20:16,621 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-16] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:20:16,621 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-16] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:20:16,621 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-16] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:20:16,936 INFO c.d.c.InsController [http-nio-8080-exec-15] >>> sv : list
+2020-12-29 11:20:16,967 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-16] Opening JDBC Connection
+2020-12-29 11:20:16,967 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-15] Opening JDBC Connection
+2020-12-29 11:20:17,464 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-16] Created connection 1952752223.
+2020-12-29 11:20:17,465 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-16] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7464a25f]
+2020-12-29 11:20:17,473 DEBUG c.d.m.b.cnt [http-nio-8080-exec-16] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:20:17,503 DEBUG c.d.m.b.cnt [http-nio-8080-exec-16] ==> Parameters: 
+2020-12-29 11:20:17,520 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-15] Created connection 1988770346.
+2020-12-29 11:20:17,521 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-15] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@768a3a2a]
+2020-12-29 11:20:17,522 DEBUG c.d.m.i.list [http-nio-8080-exec-15] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 11:20:17,522 DEBUG c.d.m.i.list [http-nio-8080-exec-15] ==> Parameters: 
+2020-12-29 11:20:17,523 TRACE c.d.m.b.cnt [http-nio-8080-exec-16] <==    Columns: count(bno)
+2020-12-29 11:20:17,523 TRACE c.d.m.b.cnt [http-nio-8080-exec-16] <==        Row: 1
+2020-12-29 11:20:17,527 DEBUG c.d.m.b.cnt [http-nio-8080-exec-16] <==      Total: 1
+2020-12-29 11:20:17,527 TRACE c.d.m.i.list [http-nio-8080-exec-15] <==    Columns: ino, iname, thumb
+2020-12-29 11:20:17,527 TRACE c.d.m.i.list [http-nio-8080-exec-15] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 11:20:17,529 DEBUG c.d.m.b.list [http-nio-8080-exec-16] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:20:17,530 DEBUG c.d.m.b.list [http-nio-8080-exec-16] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:20:17,530 TRACE c.d.m.i.list [http-nio-8080-exec-15] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 11:20:17,531 DEBUG c.d.m.i.list [http-nio-8080-exec-15] <==      Total: 2
+2020-12-29 11:20:17,532 TRACE c.d.m.b.list [http-nio-8080-exec-16] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:20:17,532 TRACE c.d.m.b.list [http-nio-8080-exec-16] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:15:14.0, s_20201229111514_앵무새1.jpg, asda, sass, tester1
+2020-12-29 11:20:17,533 DEBUG c.d.m.b.list [http-nio-8080-exec-16] <==      Total: 1
+2020-12-29 11:20:24,967 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-17] Opening JDBC Connection
+2020-12-29 11:20:25,017 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-17] Created connection 397853884.
+2020-12-29 11:20:25,017 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-17] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@17b6c4bc]
+2020-12-29 11:20:25,018 DEBUG c.d.m.m.login [http-nio-8080-exec-17] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 11:20:25,019 DEBUG c.d.m.m.login [http-nio-8080-exec-17] ==> Parameters: tester1(String), 1111(String)
+2020-12-29 11:20:25,025 TRACE c.d.m.m.login [http-nio-8080-exec-17] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:20:25,027 TRACE c.d.m.m.login [http-nio-8080-exec-17] <==        Row: tester1, tester1, 1234, 강남이젠
+2020-12-29 11:20:25,027 DEBUG c.d.m.m.login [http-nio-8080-exec-17] <==      Total: 1
+2020-12-29 11:20:25,028 INFO c.d.c.MemberController [http-nio-8080-exec-17] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@7271b6bc
+2020-12-29 11:20:28,285 DEBUG c.d.m.b.info [http-nio-8080-exec-13] ==>  Preparing: select * from don_board where bno = ? 
+2020-12-29 11:20:28,286 DEBUG c.d.m.b.info [http-nio-8080-exec-13] ==> Parameters: 1(Integer)
+2020-12-29 11:20:28,288 TRACE c.d.m.b.info [http-nio-8080-exec-13] <==    Columns: bno, iname, bregdate, moddate, imgfile, thumb, bid, bcontent, bperson
+2020-12-29 11:20:28,290 TRACE c.d.m.b.info [http-nio-8080-exec-13] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:15:14.0, 20201229111514_앵무새1.jpg, s_20201229111514_앵무새1.jpg, tester1, asda, sass
+2020-12-29 11:20:28,291 DEBUG c.d.m.b.info [http-nio-8080-exec-13] <==      Total: 1
+2020-12-29 11:20:32,954 INFO c.d.c.BoardController [http-nio-8080-exec-14] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:20:32,954 INFO c.d.c.BoardController [http-nio-8080-exec-14] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:23:38,074 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-22] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 11:23:38,408 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-22] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:23:38,408 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-22] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:23:38,408 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-22] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:23:38,408 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-22] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:23:38,979 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-22] Opening JDBC Connection
+2020-12-29 11:23:39,697 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-22] Created connection 1555359888.
+2020-12-29 11:23:39,698 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-22] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5cb4e890]
+2020-12-29 11:23:39,704 DEBUG c.d.m.b.cnt [http-nio-8080-exec-22] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:23:39,729 DEBUG c.d.m.b.cnt [http-nio-8080-exec-22] ==> Parameters: 
+2020-12-29 11:23:39,739 TRACE c.d.m.b.cnt [http-nio-8080-exec-22] <==    Columns: count(bno)
+2020-12-29 11:23:39,739 TRACE c.d.m.b.cnt [http-nio-8080-exec-22] <==        Row: 1
+2020-12-29 11:23:39,742 DEBUG c.d.m.b.cnt [http-nio-8080-exec-22] <==      Total: 1
+2020-12-29 11:23:39,744 DEBUG c.d.m.b.list [http-nio-8080-exec-22] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:23:39,745 DEBUG c.d.m.b.list [http-nio-8080-exec-22] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:23:39,746 TRACE c.d.m.b.list [http-nio-8080-exec-22] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:23:39,747 TRACE c.d.m.b.list [http-nio-8080-exec-22] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:15:14.0, s_20201229111514_앵무새1.jpg, asda, sass, tester1
+2020-12-29 11:23:39,750 DEBUG c.d.m.b.list [http-nio-8080-exec-22] <==      Total: 1
+2020-12-29 11:23:43,490 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-30] Opening JDBC Connection
+2020-12-29 11:23:43,542 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-30] Created connection 1703300844.
+2020-12-29 11:23:43,543 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-30] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@65864eec]
+2020-12-29 11:23:43,544 DEBUG c.d.m.m.login [http-nio-8080-exec-30] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 11:23:43,545 DEBUG c.d.m.m.login [http-nio-8080-exec-30] ==> Parameters: tester1(String), 1111(String)
+2020-12-29 11:23:43,549 TRACE c.d.m.m.login [http-nio-8080-exec-30] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:23:43,549 TRACE c.d.m.m.login [http-nio-8080-exec-30] <==        Row: tester1, tester1, 1234, 강남이젠
+2020-12-29 11:23:43,550 DEBUG c.d.m.m.login [http-nio-8080-exec-30] <==      Total: 1
+2020-12-29 11:23:43,553 INFO c.d.c.MemberController [http-nio-8080-exec-30] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@1d792ff6
+2020-12-29 11:23:46,429 DEBUG c.d.m.b.info [http-nio-8080-exec-21] ==>  Preparing: select * from don_board where bno = ? 
+2020-12-29 11:23:46,430 DEBUG c.d.m.b.info [http-nio-8080-exec-21] ==> Parameters: 1(Integer)
+2020-12-29 11:23:46,437 TRACE c.d.m.b.info [http-nio-8080-exec-21] <==    Columns: bno, iname, bregdate, moddate, imgfile, thumb, bid, bcontent, bperson
+2020-12-29 11:23:46,438 TRACE c.d.m.b.info [http-nio-8080-exec-21] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:15:14.0, 20201229111514_앵무새1.jpg, s_20201229111514_앵무새1.jpg, tester1, asda, sass
+2020-12-29 11:23:46,442 DEBUG c.d.m.b.info [http-nio-8080-exec-21] <==      Total: 1
+2020-12-29 11:23:51,728 INFO c.d.c.BoardController [http-nio-8080-exec-23] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:23:51,729 INFO c.d.c.BoardController [http-nio-8080-exec-23] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:23:51,755 DEBUG c.d.m.b.edit [http-nio-8080-exec-23] ==>  Preparing: update don_board set bperson = ?, bcontent = ?, moddate = now(), imgfile = ?, thumb = ? where bno = ? 
+2020-12-29 11:23:51,756 DEBUG c.d.m.b.edit [http-nio-8080-exec-23] ==> Parameters: sadsadsadsa(String), asda(String), 20201229111514_앵무새1.jpg(String), s_20201229111514_앵무새1.jpg(String), 1(Integer)
+2020-12-29 11:23:51,759 DEBUG c.d.m.b.edit [http-nio-8080-exec-23] <==    Updates: 1
+2020-12-29 11:23:51,759 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-23] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5cb4e890]
+2020-12-29 11:23:51,761 INFO c.d.c.BoardController [http-nio-8080-exec-23] >>> 게시판 수정 성공
+2020-12-29 11:23:51,762 DEBUG c.d.m.b.cnt [http-nio-8080-exec-23] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:23:51,762 DEBUG c.d.m.b.cnt [http-nio-8080-exec-23] ==> Parameters: 
+2020-12-29 11:23:51,763 TRACE c.d.m.b.cnt [http-nio-8080-exec-23] <==    Columns: count(bno)
+2020-12-29 11:23:51,763 TRACE c.d.m.b.cnt [http-nio-8080-exec-23] <==        Row: 1
+2020-12-29 11:23:51,763 DEBUG c.d.m.b.cnt [http-nio-8080-exec-23] <==      Total: 1
+2020-12-29 11:23:51,764 DEBUG c.d.m.b.list [http-nio-8080-exec-23] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:23:51,764 DEBUG c.d.m.b.list [http-nio-8080-exec-23] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:23:51,765 TRACE c.d.m.b.list [http-nio-8080-exec-23] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:23:51,766 TRACE c.d.m.b.list [http-nio-8080-exec-23] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:23:51.0, s_20201229111514_앵무새1.jpg, asda, sadsadsadsa, tester1
+2020-12-29 11:23:51,769 DEBUG c.d.m.b.list [http-nio-8080-exec-23] <==      Total: 1
+2020-12-29 11:23:56,787 DEBUG c.d.m.b.info [http-nio-8080-exec-31] ==>  Preparing: select * from don_board where bno = ? 
+2020-12-29 11:23:56,789 DEBUG c.d.m.b.info [http-nio-8080-exec-31] ==> Parameters: 1(Integer)
+2020-12-29 11:23:56,792 TRACE c.d.m.b.info [http-nio-8080-exec-31] <==    Columns: bno, iname, bregdate, moddate, imgfile, thumb, bid, bcontent, bperson
+2020-12-29 11:23:56,793 TRACE c.d.m.b.info [http-nio-8080-exec-31] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:23:51.0, 20201229111514_앵무새1.jpg, s_20201229111514_앵무새1.jpg, tester1, asda, sadsadsadsa
+2020-12-29 11:23:56,795 DEBUG c.d.m.b.info [http-nio-8080-exec-31] <==      Total: 1
+2020-12-29 11:24:01,200 INFO c.d.c.BoardController [http-nio-8080-exec-31] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:24:01,202 INFO c.d.c.BoardController [http-nio-8080-exec-31] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:24:01,204 DEBUG c.d.m.b.edit [http-nio-8080-exec-31] ==>  Preparing: update don_board set bperson = ?, bcontent = ?, moddate = now(), imgfile = ?, thumb = ? where bno = ? 
+2020-12-29 11:24:01,205 DEBUG c.d.m.b.edit [http-nio-8080-exec-31] ==> Parameters: sadsadsadsa(String), asdafsafsa(String), 20201229111514_앵무새1.jpg(String), s_20201229111514_앵무새1.jpg(String), 1(Integer)
+2020-12-29 11:24:01,207 DEBUG c.d.m.b.edit [http-nio-8080-exec-31] <==    Updates: 1
+2020-12-29 11:24:01,208 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-31] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@5cb4e890]
+2020-12-29 11:24:01,210 INFO c.d.c.BoardController [http-nio-8080-exec-31] >>> 게시판 수정 성공
+2020-12-29 11:24:01,210 DEBUG c.d.m.b.cnt [http-nio-8080-exec-31] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:24:01,211 DEBUG c.d.m.b.cnt [http-nio-8080-exec-31] ==> Parameters: 
+2020-12-29 11:24:01,212 TRACE c.d.m.b.cnt [http-nio-8080-exec-31] <==    Columns: count(bno)
+2020-12-29 11:24:01,212 TRACE c.d.m.b.cnt [http-nio-8080-exec-31] <==        Row: 1
+2020-12-29 11:24:01,212 DEBUG c.d.m.b.cnt [http-nio-8080-exec-31] <==      Total: 1
+2020-12-29 11:24:01,213 DEBUG c.d.m.b.list [http-nio-8080-exec-31] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:24:01,213 DEBUG c.d.m.b.list [http-nio-8080-exec-31] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:24:01,215 TRACE c.d.m.b.list [http-nio-8080-exec-31] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:24:01,217 TRACE c.d.m.b.list [http-nio-8080-exec-31] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:24:01.0, s_20201229111514_앵무새1.jpg, asdafsafsa, sadsadsadsa, tester1
+2020-12-29 11:24:01,218 DEBUG c.d.m.b.list [http-nio-8080-exec-31] <==      Total: 1
+2020-12-29 11:24:06,090 DEBUG c.d.m.b.info [http-nio-8080-exec-25] ==>  Preparing: select * from don_board where bno = ? 
+2020-12-29 11:24:06,091 DEBUG c.d.m.b.info [http-nio-8080-exec-25] ==> Parameters: 1(Integer)
+2020-12-29 11:24:06,095 TRACE c.d.m.b.info [http-nio-8080-exec-25] <==    Columns: bno, iname, bregdate, moddate, imgfile, thumb, bid, bcontent, bperson
+2020-12-29 11:24:06,097 TRACE c.d.m.b.info [http-nio-8080-exec-25] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:24:01.0, 20201229111514_앵무새1.jpg, s_20201229111514_앵무새1.jpg, tester1, asdafsafsa, sadsadsadsa
+2020-12-29 11:24:06,098 DEBUG c.d.m.b.info [http-nio-8080-exec-25] <==      Total: 1
+2020-12-29 11:24:12,537 INFO c.d.c.BoardController [http-nio-8080-exec-26] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:24:12,538 INFO c.d.c.BoardController [http-nio-8080-exec-26] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:29:38,993 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-36] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 11:29:39,251 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-36] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:29:39,251 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-36] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:29:39,251 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-36] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:29:39,251 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-36] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 11:29:39,554 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-36] Opening JDBC Connection
+2020-12-29 11:29:40,186 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-36] Created connection 1825590309.
+2020-12-29 11:29:40,186 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-36] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6cd04c25]
+2020-12-29 11:29:40,193 DEBUG c.d.m.b.cnt [http-nio-8080-exec-36] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:29:40,223 DEBUG c.d.m.b.cnt [http-nio-8080-exec-36] ==> Parameters: 
+2020-12-29 11:29:40,234 TRACE c.d.m.b.cnt [http-nio-8080-exec-36] <==    Columns: count(bno)
+2020-12-29 11:29:40,235 TRACE c.d.m.b.cnt [http-nio-8080-exec-36] <==        Row: 1
+2020-12-29 11:29:40,238 DEBUG c.d.m.b.cnt [http-nio-8080-exec-36] <==      Total: 1
+2020-12-29 11:29:40,239 DEBUG c.d.m.b.list [http-nio-8080-exec-36] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:29:40,240 DEBUG c.d.m.b.list [http-nio-8080-exec-36] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:29:40,241 TRACE c.d.m.b.list [http-nio-8080-exec-36] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:29:40,242 TRACE c.d.m.b.list [http-nio-8080-exec-36] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:24:01.0, s_20201229111514_앵무새1.jpg, asdafsafsa, sadsadsadsa, tester1
+2020-12-29 11:29:40,245 DEBUG c.d.m.b.list [http-nio-8080-exec-36] <==      Total: 1
+2020-12-29 11:29:44,741 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-32] Opening JDBC Connection
+2020-12-29 11:29:44,791 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-32] Created connection 1375916111.
+2020-12-29 11:29:44,791 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-32] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@5202d04f]
+2020-12-29 11:29:44,792 DEBUG c.d.m.m.login [http-nio-8080-exec-32] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 11:29:44,792 DEBUG c.d.m.m.login [http-nio-8080-exec-32] ==> Parameters: tester1(String), 1111(String)
+2020-12-29 11:29:44,794 TRACE c.d.m.m.login [http-nio-8080-exec-32] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:29:44,794 TRACE c.d.m.m.login [http-nio-8080-exec-32] <==        Row: tester1, tester1, 1234, 강남이젠
+2020-12-29 11:29:44,795 DEBUG c.d.m.m.login [http-nio-8080-exec-32] <==      Total: 1
+2020-12-29 11:29:44,795 INFO c.d.c.MemberController [http-nio-8080-exec-32] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@30408d9
+2020-12-29 11:29:48,292 DEBUG c.d.m.b.info [http-nio-8080-exec-37] ==>  Preparing: select * from don_board where bno = ? 
+2020-12-29 11:29:48,294 DEBUG c.d.m.b.info [http-nio-8080-exec-37] ==> Parameters: 1(Integer)
+2020-12-29 11:29:48,300 TRACE c.d.m.b.info [http-nio-8080-exec-37] <==    Columns: bno, iname, bregdate, moddate, imgfile, thumb, bid, bcontent, bperson
+2020-12-29 11:29:48,304 TRACE c.d.m.b.info [http-nio-8080-exec-37] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:24:01.0, 20201229111514_앵무새1.jpg, s_20201229111514_앵무새1.jpg, tester1, asdafsafsa, sadsadsadsa
+2020-12-29 11:29:48,306 DEBUG c.d.m.b.info [http-nio-8080-exec-37] <==      Total: 1
+2020-12-29 11:29:57,306 INFO c.d.c.BoardController [http-nio-8080-exec-40] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:29:57,307 INFO c.d.c.BoardController [http-nio-8080-exec-40] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:29:57,340 INFO c.d.c.BoardController [http-nio-8080-exec-40] >>>> uploadPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload\242.jpg
+2020-12-29 11:29:57,341 INFO c.d.c.BoardController [http-nio-8080-exec-40] 20201229112957
+2020-12-29 11:29:57,341 INFO c.d.c.BoardController [http-nio-8080-exec-40] >>>> FileName: 242.jpg
+2020-12-29 11:29:57,341 INFO c.d.c.BoardController [http-nio-8080-exec-40] >>>> uploadFileName: 20201229112957_242.jpg
+2020-12-29 11:29:57,467 DEBUG c.d.m.b.edit [http-nio-8080-exec-40] ==>  Preparing: update don_board set bperson = ?, bcontent = ?, moddate = now(), imgfile = ?, thumb = ? where bno = ? 
+2020-12-29 11:29:57,468 DEBUG c.d.m.b.edit [http-nio-8080-exec-40] ==> Parameters: qweqwe(String), qweqwe(String), 20201229112957_242.jpg(String), s_20201229112957_242.jpg(String), 1(Integer)
+2020-12-29 11:29:57,471 DEBUG c.d.m.b.edit [http-nio-8080-exec-40] <==    Updates: 1
+2020-12-29 11:29:57,471 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-40] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6cd04c25]
+2020-12-29 11:29:57,473 INFO c.d.c.BoardController [http-nio-8080-exec-40] >>> 게시판 수정 성공
+2020-12-29 11:29:57,474 DEBUG c.d.m.b.cnt [http-nio-8080-exec-40] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:29:57,474 DEBUG c.d.m.b.cnt [http-nio-8080-exec-40] ==> Parameters: 
+2020-12-29 11:29:57,475 TRACE c.d.m.b.cnt [http-nio-8080-exec-40] <==    Columns: count(bno)
+2020-12-29 11:29:57,475 TRACE c.d.m.b.cnt [http-nio-8080-exec-40] <==        Row: 1
+2020-12-29 11:29:57,475 DEBUG c.d.m.b.cnt [http-nio-8080-exec-40] <==      Total: 1
+2020-12-29 11:29:57,476 DEBUG c.d.m.b.list [http-nio-8080-exec-40] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:29:57,477 DEBUG c.d.m.b.list [http-nio-8080-exec-40] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:29:57,478 TRACE c.d.m.b.list [http-nio-8080-exec-40] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:29:57,479 TRACE c.d.m.b.list [http-nio-8080-exec-40] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:29:57.0, s_20201229112957_242.jpg, qweqwe, qweqwe, tester1
+2020-12-29 11:29:57,480 DEBUG c.d.m.b.list [http-nio-8080-exec-40] <==      Total: 1
+2020-12-29 11:31:52,629 INFO c.d.c.BoardController [http-nio-8080-exec-34] realPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\
+2020-12-29 11:31:52,630 INFO c.d.c.BoardController [http-nio-8080-exec-34] SavePath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload
+2020-12-29 11:31:52,637 INFO c.d.c.BoardController [http-nio-8080-exec-34] >>>> uploadPath: C:\_java\_jsp\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Donation\upload\까마귀2.jpg
+2020-12-29 11:31:52,638 INFO c.d.c.BoardController [http-nio-8080-exec-34] 20201229113152
+2020-12-29 11:31:52,638 INFO c.d.c.BoardController [http-nio-8080-exec-34] >>>> FileName: 까마귀2.jpg
+2020-12-29 11:31:52,638 INFO c.d.c.BoardController [http-nio-8080-exec-34] >>>> uploadFileName: 20201229113152_까마귀2.jpg
+2020-12-29 11:31:52,687 DEBUG c.d.m.b.reg [http-nio-8080-exec-34] ==>  Preparing: insert into don_board (bid, iname, bperson, bcontent, imgfile, thumb) values (?,?,?,?, ?, ?) 
+2020-12-29 11:31:52,691 DEBUG c.d.m.b.reg [http-nio-8080-exec-34] ==> Parameters: tester1(String), 강남이젠(String), sadsadsadsa(String), 감사^^(String), 20201229113152_까마귀2.jpg(String), s_20201229113152_까마귀2.jpg(String)
+2020-12-29 11:31:52,697 DEBUG c.d.m.b.reg [http-nio-8080-exec-34] <==    Updates: 1
+2020-12-29 11:31:52,697 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-34] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6cd04c25]
+2020-12-29 11:31:52,699 INFO c.d.c.BoardController [http-nio-8080-exec-34] >>> 상품등록 성공
+2020-12-29 11:31:52,699 DEBUG c.d.m.b.cnt [http-nio-8080-exec-34] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:31:52,700 DEBUG c.d.m.b.cnt [http-nio-8080-exec-34] ==> Parameters: 
+2020-12-29 11:31:52,701 TRACE c.d.m.b.cnt [http-nio-8080-exec-34] <==    Columns: count(bno)
+2020-12-29 11:31:52,701 TRACE c.d.m.b.cnt [http-nio-8080-exec-34] <==        Row: 2
+2020-12-29 11:31:52,701 DEBUG c.d.m.b.cnt [http-nio-8080-exec-34] <==      Total: 1
+2020-12-29 11:31:52,702 DEBUG c.d.m.b.list [http-nio-8080-exec-34] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:31:52,702 DEBUG c.d.m.b.list [http-nio-8080-exec-34] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:31:52,704 TRACE c.d.m.b.list [http-nio-8080-exec-34] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:31:52,704 TRACE c.d.m.b.list [http-nio-8080-exec-34] <==        Row: 1, 강남이젠, 2020-12-29 11:15:14.0, 2020-12-29 11:29:57.0, s_20201229112957_242.jpg, qweqwe, qweqwe, tester1
+2020-12-29 11:31:52,707 TRACE c.d.m.b.list [http-nio-8080-exec-34] <==        Row: 2, 강남이젠, 2020-12-29 11:31:52.0, 2020-12-29 11:31:52.0, s_20201229113152_까마귀2.jpg, 감사^^, sadsadsadsa, tester1
+2020-12-29 11:31:52,708 DEBUG c.d.m.b.list [http-nio-8080-exec-34] <==      Total: 2
+2020-12-29 11:31:59,346 INFO c.d.c.BoardController [http-nio-8080-exec-50] bno44444444444444: 1
+2020-12-29 11:31:59,347 DEBUG c.d.m.b.delete [http-nio-8080-exec-50] ==>  Preparing: delete from don_board where bno = ? 
+2020-12-29 11:31:59,348 DEBUG c.d.m.b.delete [http-nio-8080-exec-50] ==> Parameters: 1(Integer)
+2020-12-29 11:31:59,352 DEBUG c.d.m.b.delete [http-nio-8080-exec-50] <==    Updates: 1
+2020-12-29 11:31:59,354 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-50] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@6cd04c25]
+2020-12-29 11:31:59,356 INFO c.d.c.BoardController [http-nio-8080-exec-50] >>> ProductController > delete : 삭제성공
+2020-12-29 11:31:59,357 DEBUG c.d.m.b.cnt [http-nio-8080-exec-50] ==>  Preparing: select count(bno) from don_board 
+2020-12-29 11:31:59,357 DEBUG c.d.m.b.cnt [http-nio-8080-exec-50] ==> Parameters: 
+2020-12-29 11:31:59,358 TRACE c.d.m.b.cnt [http-nio-8080-exec-50] <==    Columns: count(bno)
+2020-12-29 11:31:59,358 TRACE c.d.m.b.cnt [http-nio-8080-exec-50] <==        Row: 1
+2020-12-29 11:31:59,359 DEBUG c.d.m.b.cnt [http-nio-8080-exec-50] <==      Total: 1
+2020-12-29 11:31:59,359 DEBUG c.d.m.b.list [http-nio-8080-exec-50] ==>  Preparing: select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid from don_board limit ?, ? 
+2020-12-29 11:31:59,360 DEBUG c.d.m.b.list [http-nio-8080-exec-50] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:31:59,362 TRACE c.d.m.b.list [http-nio-8080-exec-50] <==    Columns: bno, iname, bregdate, moddate, thumb, bcontent, bperson, bid
+2020-12-29 11:31:59,362 TRACE c.d.m.b.list [http-nio-8080-exec-50] <==        Row: 2, 강남이젠, 2020-12-29 11:31:52.0, 2020-12-29 11:31:52.0, s_20201229113152_까마귀2.jpg, 감사^^, sadsadsadsa, tester1
+2020-12-29 11:31:59,363 DEBUG c.d.m.b.list [http-nio-8080-exec-50] <==      Total: 1
+2020-12-29 11:32:57,087 INFO c.d.c.ProductController [http-nio-8080-exec-41] >>> sv : list
+2020-12-29 11:32:57,087 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-41] Opening JDBC Connection
+2020-12-29 11:32:57,141 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-41] Created connection 494447388.
+2020-12-29 11:32:57,142 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-41] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@1d78ab1c]
+2020-12-29 11:32:57,145 DEBUG c.d.m.p.cnt [http-nio-8080-exec-41] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 11:32:57,145 DEBUG c.d.m.p.cnt [http-nio-8080-exec-41] ==> Parameters: 
+2020-12-29 11:32:57,149 TRACE c.d.m.p.cnt [http-nio-8080-exec-41] <==    Columns: count(pno)
+2020-12-29 11:32:57,149 TRACE c.d.m.p.cnt [http-nio-8080-exec-41] <==        Row: 2
+2020-12-29 11:32:57,149 DEBUG c.d.m.p.cnt [http-nio-8080-exec-41] <==      Total: 1
+2020-12-29 11:32:57,150 DEBUG c.d.m.p.list [http-nio-8080-exec-41] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 11:32:57,151 DEBUG c.d.m.p.list [http-nio-8080-exec-41] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 11:32:57,152 TRACE c.d.m.p.list [http-nio-8080-exec-41] <==    Columns: pno, pname, price, thumb
+2020-12-29 11:32:57,152 TRACE c.d.m.p.list [http-nio-8080-exec-41] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 11:32:57,152 TRACE c.d.m.p.list [http-nio-8080-exec-41] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 11:32:57,153 DEBUG c.d.m.p.list [http-nio-8080-exec-41] <==      Total: 2
+2020-12-29 11:32:59,957 INFO c.d.c.SupportController [http-nio-8080-exec-49] >>> sv : list
+2020-12-29 11:32:59,958 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-49] Opening JDBC Connection
+2020-12-29 11:33:00,011 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-49] Created connection 657236109.
+2020-12-29 11:33:00,011 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-49] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@272ca08d]
+2020-12-29 11:33:00,013 DEBUG c.d.m.s.list [http-nio-8080-exec-49] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 11:33:00,014 DEBUG c.d.m.s.list [http-nio-8080-exec-49] ==> Parameters: 
+2020-12-29 11:33:00,019 TRACE c.d.m.s.list [http-nio-8080-exec-49] <==    Columns: sno, pname, price, thumb
+2020-12-29 11:33:00,019 TRACE c.d.m.s.list [http-nio-8080-exec-49] <==        Row: 1, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 11:33:00,020 TRACE c.d.m.s.list [http-nio-8080-exec-49] <==        Row: 2, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 11:33:00,020 DEBUG c.d.m.s.list [http-nio-8080-exec-49] <==      Total: 2
+2020-12-29 11:55:16,263 INFO c.d.c.InsController [http-nio-8080-exec-46] >>> sv : list
+2020-12-29 11:55:16,263 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-46] Opening JDBC Connection
+2020-12-29 11:55:16,310 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-46] Created connection 1092150624.
+2020-12-29 11:55:16,310 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-46] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4118e560]
+2020-12-29 11:55:16,313 DEBUG c.d.m.i.list [http-nio-8080-exec-46] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 11:55:16,313 DEBUG c.d.m.i.list [http-nio-8080-exec-46] ==> Parameters: 
+2020-12-29 11:55:16,319 TRACE c.d.m.i.list [http-nio-8080-exec-46] <==    Columns: ino, iname, thumb
+2020-12-29 11:55:16,319 TRACE c.d.m.i.list [http-nio-8080-exec-46] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 11:55:16,319 TRACE c.d.m.i.list [http-nio-8080-exec-46] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 11:55:16,320 DEBUG c.d.m.i.list [http-nio-8080-exec-46] <==      Total: 2
+2020-12-29 11:55:20,564 DEBUG c.d.m.m.login [http-nio-8080-exec-42] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 11:55:20,565 DEBUG c.d.m.m.login [http-nio-8080-exec-42] ==> Parameters: admin(String), 1111(String)
+2020-12-29 11:55:20,568 TRACE c.d.m.m.login [http-nio-8080-exec-42] <==    Columns: mname, mid, mphone, mins
+2020-12-29 11:55:20,568 TRACE c.d.m.m.login [http-nio-8080-exec-42] <==        Row: 관리자, admin, 1111, null
+2020-12-29 11:55:20,568 DEBUG c.d.m.m.login [http-nio-8080-exec-42] <==      Total: 1
+2020-12-29 11:55:20,569 INFO c.d.c.MemberController [http-nio-8080-exec-42] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@5e3fbd81
+2020-12-29 11:55:22,546 INFO c.d.c.InsController [http-nio-8080-exec-43] >>> sv : list
+2020-12-29 11:55:23,757 INFO c.d.c.InsController [http-nio-8080-exec-50] >>> sv : detail
+2020-12-29 11:55:23,759 DEBUG c.d.m.i.info [http-nio-8080-exec-50] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 11:55:23,760 DEBUG c.d.m.i.info [http-nio-8080-exec-50] ==> Parameters: 1(Integer)
+2020-12-29 11:55:23,763 TRACE c.d.m.i.info [http-nio-8080-exec-50] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 11:55:23,763 TRACE c.d.m.i.info [http-nio-8080-exec-50] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 11:55:23,764 DEBUG c.d.m.i.info [http-nio-8080-exec-50] <==      Total: 1
+2020-12-29 11:55:24,037 INFO c.d.c.CommentController [http-nio-8080-exec-45] >>ctxPath : /Donation
+2020-12-29 11:55:24,037 INFO c.d.c.CommentController [http-nio-8080-exec-45] >>svlPath : /comment
+2020-12-29 11:55:24,037 INFO c.d.c.CommentController [http-nio-8080-exec-45] check2
+2020-12-29 11:55:24,038 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-45] Opening JDBC Connection
+2020-12-29 11:55:24,113 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-45] Created connection 302005182.
+2020-12-29 11:55:24,114 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-45] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@12003bbe]
+2020-12-29 11:55:24,115 DEBUG c.d.m.c.list [http-nio-8080-exec-45] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 11:55:24,115 DEBUG c.d.m.c.list [http-nio-8080-exec-45] ==> Parameters: 1(Integer)
+2020-12-29 11:55:24,231 TRACE c.d.m.c.list [http-nio-8080-exec-45] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 11:55:24,232 TRACE c.d.m.c.list [http-nio-8080-exec-45] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 11:55:24,233 DEBUG c.d.m.c.list [http-nio-8080-exec-45] <==      Total: 1
+2020-12-29 11:55:24,251 INFO c.d.c.CommentController [http-nio-8080-exec-45] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 11:55:25,465 INFO c.d.c.ProductController [http-nio-8080-exec-47] >>> sv : list
+2020-12-29 11:55:26,862 INFO c.d.c.SupportController [http-nio-8080-exec-48] >>> sv : list
+2020-12-29 12:01:35,942 INFO c.d.c.InsController [http-nio-8080-exec-43] >>> sv : list
+2020-12-29 12:01:36,824 INFO c.d.c.InsController [http-nio-8080-exec-50] >>> sv : detail
+2020-12-29 12:01:37,044 INFO c.d.c.CommentController [http-nio-8080-exec-45] >>ctxPath : /Donation
+2020-12-29 12:01:37,045 INFO c.d.c.CommentController [http-nio-8080-exec-45] >>svlPath : /comment
+2020-12-29 12:01:37,045 INFO c.d.c.CommentController [http-nio-8080-exec-45] check2
+2020-12-29 12:01:37,046 INFO c.d.c.CommentController [http-nio-8080-exec-45] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:01:38,426 INFO c.d.c.ProductController [http-nio-8080-exec-48] >>> sv : list
+2020-12-29 12:02:15,650 INFO c.d.c.SupportController [http-nio-8080-exec-41] >>> sv : list
+2020-12-29 12:04:56,480 INFO c.d.c.SupportController [http-nio-8080-exec-43] >>> sv : list
+2020-12-29 12:13:21,723 INFO c.d.c.SupportController [http-nio-8080-exec-48] >>> sv : list
+2020-12-29 12:17:26,862 INFO c.d.c.SupportController [http-nio-8080-exec-46] >>> sv : list
+2020-12-29 12:18:13,864 INFO c.d.c.SupportController [http-nio-8080-exec-50] >>> sv : list
+2020-12-29 12:25:06,263 INFO c.d.c.SupportController [http-nio-8080-exec-43] >>> sv : list
+2020-12-29 12:26:07,774 INFO c.d.c.SupportController [http-nio-8080-exec-50] >>> sv : list
+2020-12-29 12:26:10,483 INFO c.d.c.InsController [http-nio-8080-exec-45] >>> sv : list
+2020-12-29 12:26:11,928 INFO c.d.c.InsController [http-nio-8080-exec-43] >>> sv : detail
+2020-12-29 12:26:12,353 INFO c.d.c.CommentController [http-nio-8080-exec-43] >>ctxPath : /Donation
+2020-12-29 12:26:12,353 INFO c.d.c.CommentController [http-nio-8080-exec-43] >>svlPath : /comment
+2020-12-29 12:26:12,354 INFO c.d.c.CommentController [http-nio-8080-exec-43] check2
+2020-12-29 12:26:12,354 INFO c.d.c.CommentController [http-nio-8080-exec-43] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:26:20,769 DEBUG c.d.m.m.login [http-nio-8080-exec-48] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:26:20,771 DEBUG c.d.m.m.login [http-nio-8080-exec-48] ==> Parameters: tester2(String), 1111(String)
+2020-12-29 12:26:20,775 TRACE c.d.m.m.login [http-nio-8080-exec-48] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:26:20,776 TRACE c.d.m.m.login [http-nio-8080-exec-48] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 12:26:20,777 DEBUG c.d.m.m.login [http-nio-8080-exec-48] <==      Total: 1
+2020-12-29 12:26:20,777 INFO c.d.c.MemberController [http-nio-8080-exec-48] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@1a3ef1f2
+2020-12-29 12:26:23,069 INFO c.d.c.InsController [http-nio-8080-exec-41] >>> sv : list
+2020-12-29 12:26:24,063 INFO c.d.c.InsController [http-nio-8080-exec-49] >>> sv : detail
+2020-12-29 12:26:24,517 INFO c.d.c.CommentController [http-nio-8080-exec-49] >>ctxPath : /Donation
+2020-12-29 12:26:24,518 INFO c.d.c.CommentController [http-nio-8080-exec-49] >>svlPath : /comment
+2020-12-29 12:26:24,518 INFO c.d.c.CommentController [http-nio-8080-exec-49] check2
+2020-12-29 12:26:24,518 INFO c.d.c.CommentController [http-nio-8080-exec-49] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:26:25,369 INFO c.d.c.ProductController [http-nio-8080-exec-46] >>> sv : list
+2020-12-29 12:26:28,566 INFO c.d.c.SupportController [http-nio-8080-exec-47] >>> sv : reg
+2020-12-29 12:26:28,566 INFO c.d.c.SupportController [http-nio-8080-exec-47] >>> thumb : s_20201228223204_졸귀새9.jpg
+2020-12-29 12:26:28,566 INFO c.d.c.SupportController [http-nio-8080-exec-47] >>> pname : 너무나귀여운새
+2020-12-29 12:26:28,566 INFO c.d.c.SupportController [http-nio-8080-exec-47] >>> price : 500
+2020-12-29 12:26:28,567 DEBUG c.d.m.s.sreg [http-nio-8080-exec-47] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:26:28,568 DEBUG c.d.m.s.sreg [http-nio-8080-exec-47] ==> Parameters: s_20201228223204_졸귀새9.jpg(String), 너무나귀여운새(String), 500(Integer)
+2020-12-29 12:26:28,571 DEBUG c.d.m.s.sreg [http-nio-8080-exec-47] <==    Updates: 1
+2020-12-29 12:26:28,572 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-47] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@272ca08d]
+2020-12-29 12:26:30,980 INFO c.d.c.SupportController [http-nio-8080-exec-50] >>> sv : list
+2020-12-29 12:26:30,982 DEBUG c.d.m.s.list [http-nio-8080-exec-50] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:26:30,983 DEBUG c.d.m.s.list [http-nio-8080-exec-50] ==> Parameters: 
+2020-12-29 12:26:30,985 TRACE c.d.m.s.list [http-nio-8080-exec-50] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:26:30,985 TRACE c.d.m.s.list [http-nio-8080-exec-50] <==        Row: 1, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:26:30,989 TRACE c.d.m.s.list [http-nio-8080-exec-50] <==        Row: 2, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:26:30,989 TRACE c.d.m.s.list [http-nio-8080-exec-50] <==        Row: 3, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:26:30,989 DEBUG c.d.m.s.list [http-nio-8080-exec-50] <==      Total: 3
+2020-12-29 12:26:41,528 INFO c.d.c.ReportController [http-nio-8080-exec-45] >>>>>>>1
+2020-12-29 12:28:13,065 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-45] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 12:28:13,318 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-45] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:28:13,318 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-45] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:28:13,318 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-45] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:28:13,319 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-45] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:28:13,595 INFO c.d.c.SupportController [http-nio-8080-exec-45] >>> sv : list
+2020-12-29 12:28:13,628 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-45] Opening JDBC Connection
+2020-12-29 12:28:14,155 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-45] Created connection 1845369241.
+2020-12-29 12:28:14,155 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-45] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6dfe1999]
+2020-12-29 12:28:14,161 DEBUG c.d.m.s.list [http-nio-8080-exec-45] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:28:14,196 DEBUG c.d.m.s.list [http-nio-8080-exec-45] ==> Parameters: 
+2020-12-29 12:28:14,211 TRACE c.d.m.s.list [http-nio-8080-exec-45] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:28:14,211 TRACE c.d.m.s.list [http-nio-8080-exec-45] <==        Row: 1, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:28:14,217 TRACE c.d.m.s.list [http-nio-8080-exec-45] <==        Row: 2, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:28:14,218 TRACE c.d.m.s.list [http-nio-8080-exec-45] <==        Row: 3, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:28:14,218 DEBUG c.d.m.s.list [http-nio-8080-exec-45] <==      Total: 3
+2020-12-29 12:28:21,797 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-47] Opening JDBC Connection
+2020-12-29 12:28:21,851 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-47] Created connection 1814346741.
+2020-12-29 12:28:21,851 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-47] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6c24bbf5]
+2020-12-29 12:28:21,852 DEBUG c.d.m.m.login [http-nio-8080-exec-47] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:28:21,853 DEBUG c.d.m.m.login [http-nio-8080-exec-47] ==> Parameters: tester2(String), 1111(String)
+2020-12-29 12:28:21,856 TRACE c.d.m.m.login [http-nio-8080-exec-47] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:28:21,857 TRACE c.d.m.m.login [http-nio-8080-exec-47] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 12:28:21,857 DEBUG c.d.m.m.login [http-nio-8080-exec-47] <==      Total: 1
+2020-12-29 12:28:21,858 INFO c.d.c.MemberController [http-nio-8080-exec-47] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@744fdb02
+2020-12-29 12:28:22,821 INFO c.d.c.InsController [http-nio-8080-exec-48] >>> sv : list
+2020-12-29 12:28:22,821 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-48] Opening JDBC Connection
+2020-12-29 12:28:22,875 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-48] Created connection 1849888474.
+2020-12-29 12:28:22,875 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-48] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6e430eda]
+2020-12-29 12:28:22,876 DEBUG c.d.m.i.list [http-nio-8080-exec-48] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 12:28:22,877 DEBUG c.d.m.i.list [http-nio-8080-exec-48] ==> Parameters: 
+2020-12-29 12:28:22,879 TRACE c.d.m.i.list [http-nio-8080-exec-48] <==    Columns: ino, iname, thumb
+2020-12-29 12:28:22,879 TRACE c.d.m.i.list [http-nio-8080-exec-48] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 12:28:22,880 TRACE c.d.m.i.list [http-nio-8080-exec-48] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 12:28:22,881 DEBUG c.d.m.i.list [http-nio-8080-exec-48] <==      Total: 2
+2020-12-29 12:28:24,020 INFO c.d.c.InsController [http-nio-8080-exec-42] >>> sv : detail
+2020-12-29 12:28:24,022 DEBUG c.d.m.i.info [http-nio-8080-exec-42] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 12:28:24,024 DEBUG c.d.m.i.info [http-nio-8080-exec-42] ==> Parameters: 1(Integer)
+2020-12-29 12:28:24,027 TRACE c.d.m.i.info [http-nio-8080-exec-42] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 12:28:24,027 TRACE c.d.m.i.info [http-nio-8080-exec-42] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 12:28:24,028 DEBUG c.d.m.i.info [http-nio-8080-exec-42] <==      Total: 1
+2020-12-29 12:28:24,413 INFO c.d.c.CommentController [http-nio-8080-exec-56] >>ctxPath : /Donation
+2020-12-29 12:28:24,413 INFO c.d.c.CommentController [http-nio-8080-exec-56] >>svlPath : /comment
+2020-12-29 12:28:24,414 INFO c.d.c.CommentController [http-nio-8080-exec-56] check2
+2020-12-29 12:28:24,414 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-56] Opening JDBC Connection
+2020-12-29 12:28:24,483 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-56] Created connection 348770229.
+2020-12-29 12:28:24,483 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-56] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@14c9cfb5]
+2020-12-29 12:28:24,486 DEBUG c.d.m.c.list [http-nio-8080-exec-56] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 12:28:24,486 DEBUG c.d.m.c.list [http-nio-8080-exec-56] ==> Parameters: 1(Integer)
+2020-12-29 12:28:24,488 TRACE c.d.m.c.list [http-nio-8080-exec-56] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 12:28:24,488 TRACE c.d.m.c.list [http-nio-8080-exec-56] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 12:28:24,489 DEBUG c.d.m.c.list [http-nio-8080-exec-56] <==      Total: 1
+2020-12-29 12:28:24,502 INFO c.d.c.CommentController [http-nio-8080-exec-56] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:28:25,208 INFO c.d.c.ProductController [http-nio-8080-exec-52] >>> sv : list
+2020-12-29 12:28:25,209 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-52] Opening JDBC Connection
+2020-12-29 12:28:25,267 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-52] Created connection 1855522579.
+2020-12-29 12:28:25,267 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-52] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6e990713]
+2020-12-29 12:28:25,268 DEBUG c.d.m.p.cnt [http-nio-8080-exec-52] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 12:28:25,269 DEBUG c.d.m.p.cnt [http-nio-8080-exec-52] ==> Parameters: 
+2020-12-29 12:28:25,272 TRACE c.d.m.p.cnt [http-nio-8080-exec-52] <==    Columns: count(pno)
+2020-12-29 12:28:25,272 TRACE c.d.m.p.cnt [http-nio-8080-exec-52] <==        Row: 2
+2020-12-29 12:28:25,273 DEBUG c.d.m.p.cnt [http-nio-8080-exec-52] <==      Total: 1
+2020-12-29 12:28:25,274 DEBUG c.d.m.p.list [http-nio-8080-exec-52] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 12:28:25,274 DEBUG c.d.m.p.list [http-nio-8080-exec-52] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 12:28:25,276 TRACE c.d.m.p.list [http-nio-8080-exec-52] <==    Columns: pno, pname, price, thumb
+2020-12-29 12:28:25,276 TRACE c.d.m.p.list [http-nio-8080-exec-52] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:28:25,277 TRACE c.d.m.p.list [http-nio-8080-exec-52] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:28:25,277 DEBUG c.d.m.p.list [http-nio-8080-exec-52] <==      Total: 2
+2020-12-29 12:28:26,992 INFO c.d.c.SupportController [http-nio-8080-exec-57] >>> sv : list
+2020-12-29 12:28:28,575 INFO c.d.c.ReportController [http-nio-8080-exec-58] >>>>>>>1
+2020-12-29 12:28:28,576 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-58] Opening JDBC Connection
+2020-12-29 12:28:28,634 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-58] Created connection 100900749.
+2020-12-29 12:28:28,634 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-58] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6039f8d]
+2020-12-29 12:28:28,635 DEBUG c.d.m.r.rm [http-nio-8080-exec-58] ==>  Preparing: delete * from don_support 
+2020-12-29 12:28:28,636 DEBUG c.d.m.r.rm [http-nio-8080-exec-58] ==> Parameters: 
+2020-12-29 12:29:24,391 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-55] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 12:29:24,661 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-55] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:29:24,662 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-55] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:29:24,662 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-55] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:29:24,662 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-55] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:29:24,904 INFO c.d.c.ProductController [http-nio-8080-exec-55] >>> sv : list
+2020-12-29 12:29:24,932 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-55] Opening JDBC Connection
+2020-12-29 12:29:25,434 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-55] Created connection 9957681.
+2020-12-29 12:29:25,434 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-55] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@97f131]
+2020-12-29 12:29:25,440 DEBUG c.d.m.p.cnt [http-nio-8080-exec-55] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 12:29:25,466 DEBUG c.d.m.p.cnt [http-nio-8080-exec-55] ==> Parameters: 
+2020-12-29 12:29:25,474 TRACE c.d.m.p.cnt [http-nio-8080-exec-55] <==    Columns: count(pno)
+2020-12-29 12:29:25,474 TRACE c.d.m.p.cnt [http-nio-8080-exec-55] <==        Row: 2
+2020-12-29 12:29:25,477 DEBUG c.d.m.p.cnt [http-nio-8080-exec-55] <==      Total: 1
+2020-12-29 12:29:25,478 DEBUG c.d.m.p.list [http-nio-8080-exec-55] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 12:29:25,479 DEBUG c.d.m.p.list [http-nio-8080-exec-55] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 12:29:25,480 TRACE c.d.m.p.list [http-nio-8080-exec-55] <==    Columns: pno, pname, price, thumb
+2020-12-29 12:29:25,480 TRACE c.d.m.p.list [http-nio-8080-exec-55] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:29:25,483 TRACE c.d.m.p.list [http-nio-8080-exec-55] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:29:25,483 DEBUG c.d.m.p.list [http-nio-8080-exec-55] <==      Total: 2
+2020-12-29 12:29:31,111 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-57] Opening JDBC Connection
+2020-12-29 12:29:31,160 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-57] Created connection 734521896.
+2020-12-29 12:29:31,160 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-57] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2bc7ea28]
+2020-12-29 12:29:31,161 DEBUG c.d.m.m.login [http-nio-8080-exec-57] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:29:31,162 DEBUG c.d.m.m.login [http-nio-8080-exec-57] ==> Parameters: tester2(String), 1111(String)
+2020-12-29 12:29:31,163 TRACE c.d.m.m.login [http-nio-8080-exec-57] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:29:31,164 TRACE c.d.m.m.login [http-nio-8080-exec-57] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 12:29:31,164 DEBUG c.d.m.m.login [http-nio-8080-exec-57] <==      Total: 1
+2020-12-29 12:29:31,165 INFO c.d.c.MemberController [http-nio-8080-exec-57] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@4c7e9339
+2020-12-29 12:29:33,943 INFO c.d.c.InsController [http-nio-8080-exec-54] >>> sv : list
+2020-12-29 12:29:33,944 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-54] Opening JDBC Connection
+2020-12-29 12:29:34,006 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-54] Created connection 1103528042.
+2020-12-29 12:29:34,007 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-54] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@41c6806a]
+2020-12-29 12:29:34,008 DEBUG c.d.m.i.list [http-nio-8080-exec-54] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 12:29:34,008 DEBUG c.d.m.i.list [http-nio-8080-exec-54] ==> Parameters: 
+2020-12-29 12:29:34,012 TRACE c.d.m.i.list [http-nio-8080-exec-54] <==    Columns: ino, iname, thumb
+2020-12-29 12:29:34,013 TRACE c.d.m.i.list [http-nio-8080-exec-54] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 12:29:34,013 TRACE c.d.m.i.list [http-nio-8080-exec-54] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 12:29:34,014 DEBUG c.d.m.i.list [http-nio-8080-exec-54] <==      Total: 2
+2020-12-29 12:29:35,488 INFO c.d.c.InsController [http-nio-8080-exec-59] >>> sv : detail
+2020-12-29 12:29:35,490 DEBUG c.d.m.i.info [http-nio-8080-exec-59] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 12:29:35,492 DEBUG c.d.m.i.info [http-nio-8080-exec-59] ==> Parameters: 1(Integer)
+2020-12-29 12:29:35,494 TRACE c.d.m.i.info [http-nio-8080-exec-59] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 12:29:35,494 TRACE c.d.m.i.info [http-nio-8080-exec-59] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 12:29:35,495 DEBUG c.d.m.i.info [http-nio-8080-exec-59] <==      Total: 1
+2020-12-29 12:29:35,906 INFO c.d.c.CommentController [http-nio-8080-exec-52] >>ctxPath : /Donation
+2020-12-29 12:29:35,907 INFO c.d.c.CommentController [http-nio-8080-exec-52] >>svlPath : /comment
+2020-12-29 12:29:35,907 INFO c.d.c.CommentController [http-nio-8080-exec-52] check2
+2020-12-29 12:29:35,908 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-52] Opening JDBC Connection
+2020-12-29 12:29:35,983 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-52] Created connection 311425140.
+2020-12-29 12:29:35,984 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-52] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@128ff874]
+2020-12-29 12:29:35,987 DEBUG c.d.m.c.list [http-nio-8080-exec-52] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 12:29:35,988 DEBUG c.d.m.c.list [http-nio-8080-exec-52] ==> Parameters: 1(Integer)
+2020-12-29 12:29:35,990 TRACE c.d.m.c.list [http-nio-8080-exec-52] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 12:29:35,990 TRACE c.d.m.c.list [http-nio-8080-exec-52] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 12:29:35,991 DEBUG c.d.m.c.list [http-nio-8080-exec-52] <==      Total: 1
+2020-12-29 12:29:36,003 INFO c.d.c.CommentController [http-nio-8080-exec-52] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:29:37,245 INFO c.d.c.ProductController [http-nio-8080-exec-61] >>> sv : list
+2020-12-29 12:29:38,754 INFO c.d.c.SupportController [http-nio-8080-exec-66] >>> sv : list
+2020-12-29 12:29:38,755 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-66] Opening JDBC Connection
+2020-12-29 12:29:38,809 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-66] Created connection 1261832809.
+2020-12-29 12:29:38,810 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-66] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@4b360a69]
+2020-12-29 12:29:38,810 DEBUG c.d.m.s.list [http-nio-8080-exec-66] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:29:38,811 DEBUG c.d.m.s.list [http-nio-8080-exec-66] ==> Parameters: 
+2020-12-29 12:29:38,814 TRACE c.d.m.s.list [http-nio-8080-exec-66] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:29:38,814 TRACE c.d.m.s.list [http-nio-8080-exec-66] <==        Row: 1, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:29:38,814 TRACE c.d.m.s.list [http-nio-8080-exec-66] <==        Row: 2, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:29:38,815 TRACE c.d.m.s.list [http-nio-8080-exec-66] <==        Row: 3, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:29:38,815 DEBUG c.d.m.s.list [http-nio-8080-exec-66] <==      Total: 3
+2020-12-29 12:29:41,698 INFO c.d.c.ReportController [http-nio-8080-exec-62] >>>>>>>1
+2020-12-29 12:29:41,700 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Opening JDBC Connection
+2020-12-29 12:29:41,742 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-62] Created connection 226341621.
+2020-12-29 12:29:41,742 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:29:41,743 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] ==>  Preparing: delete from don_support 
+2020-12-29 12:29:41,743 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] ==> Parameters: 
+2020-12-29 12:29:41,745 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] <==    Updates: 3
+2020-12-29 12:29:41,746 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:29:41,748 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:29:41,750 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] ==> Parameters: 일반테스터(String), 너무나귀여운새(String), 500(Integer), 1(Integer), test1(String)
+2020-12-29 12:29:41,754 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] <==    Updates: 1
+2020-12-29 12:29:41,755 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:29:41,756 INFO c.d.c.ReportController [http-nio-8080-exec-62] >>>>>>>1
+2020-12-29 12:29:41,757 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] ==>  Preparing: delete from don_support 
+2020-12-29 12:29:41,757 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] ==> Parameters: 
+2020-12-29 12:29:41,758 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] <==    Updates: 0
+2020-12-29 12:29:41,758 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:29:41,759 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:29:41,760 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] ==> Parameters: 일반테스터(String), 강력한 딱따구리(String), 200(Integer), 1(Integer), test1(String)
+2020-12-29 12:29:41,762 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] <==    Updates: 1
+2020-12-29 12:29:41,762 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:29:41,764 INFO c.d.c.ReportController [http-nio-8080-exec-62] >>>>>>>1
+2020-12-29 12:29:41,764 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] ==>  Preparing: delete from don_support 
+2020-12-29 12:29:41,764 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] ==> Parameters: 
+2020-12-29 12:29:41,765 DEBUG c.d.m.r.rm [http-nio-8080-exec-62] <==    Updates: 0
+2020-12-29 12:29:41,766 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:29:41,767 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:29:41,770 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] ==> Parameters: 일반테스터(String), 너무나귀여운새(String), 500(Integer), 1(Integer), test1(String)
+2020-12-29 12:29:41,771 DEBUG c.d.m.r.reg [http-nio-8080-exec-62] <==    Updates: 1
+2020-12-29 12:29:41,772 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-62] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@d7db2f5]
+2020-12-29 12:30:43,233 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-61] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 12:30:43,479 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-61] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:30:43,479 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-61] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:30:43,479 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-61] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:30:43,479 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-61] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:30:43,768 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-61] Opening JDBC Connection
+2020-12-29 12:30:44,342 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-61] Created connection 537358569.
+2020-12-29 12:30:44,343 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-61] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@200770e9]
+2020-12-29 12:30:44,352 DEBUG c.d.m.m.login [http-nio-8080-exec-61] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:30:44,407 DEBUG c.d.m.m.login [http-nio-8080-exec-61] ==> Parameters: tester2(String), 1111(String)
+2020-12-29 12:30:44,429 TRACE c.d.m.m.login [http-nio-8080-exec-61] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:30:44,430 TRACE c.d.m.m.login [http-nio-8080-exec-61] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 12:30:44,434 DEBUG c.d.m.m.login [http-nio-8080-exec-61] <==      Total: 1
+2020-12-29 12:30:44,436 INFO c.d.c.MemberController [http-nio-8080-exec-61] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@66d96704
+2020-12-29 12:30:47,329 INFO c.d.c.InsController [http-nio-8080-exec-68] >>> sv : list
+2020-12-29 12:30:47,330 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-68] Opening JDBC Connection
+2020-12-29 12:30:47,380 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-68] Created connection 249295164.
+2020-12-29 12:30:47,380 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-68] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@edbf13c]
+2020-12-29 12:30:47,381 DEBUG c.d.m.i.list [http-nio-8080-exec-68] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 12:30:47,382 DEBUG c.d.m.i.list [http-nio-8080-exec-68] ==> Parameters: 
+2020-12-29 12:30:47,383 TRACE c.d.m.i.list [http-nio-8080-exec-68] <==    Columns: ino, iname, thumb
+2020-12-29 12:30:47,384 TRACE c.d.m.i.list [http-nio-8080-exec-68] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 12:30:47,385 TRACE c.d.m.i.list [http-nio-8080-exec-68] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 12:30:47,385 DEBUG c.d.m.i.list [http-nio-8080-exec-68] <==      Total: 2
+2020-12-29 12:30:48,466 INFO c.d.c.InsController [http-nio-8080-exec-60] >>> sv : detail
+2020-12-29 12:30:48,467 DEBUG c.d.m.i.info [http-nio-8080-exec-60] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 12:30:48,470 DEBUG c.d.m.i.info [http-nio-8080-exec-60] ==> Parameters: 1(Integer)
+2020-12-29 12:30:48,473 TRACE c.d.m.i.info [http-nio-8080-exec-60] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 12:30:48,473 TRACE c.d.m.i.info [http-nio-8080-exec-60] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 12:30:48,474 DEBUG c.d.m.i.info [http-nio-8080-exec-60] <==      Total: 1
+2020-12-29 12:30:48,974 INFO c.d.c.CommentController [http-nio-8080-exec-64] >>ctxPath : /Donation
+2020-12-29 12:30:48,975 INFO c.d.c.CommentController [http-nio-8080-exec-64] >>svlPath : /comment
+2020-12-29 12:30:48,975 INFO c.d.c.CommentController [http-nio-8080-exec-64] check2
+2020-12-29 12:30:48,975 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-64] Opening JDBC Connection
+2020-12-29 12:30:49,047 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-64] Created connection 1751980105.
+2020-12-29 12:30:49,048 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-64] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@686d1849]
+2020-12-29 12:30:49,050 DEBUG c.d.m.c.list [http-nio-8080-exec-64] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 12:30:49,051 DEBUG c.d.m.c.list [http-nio-8080-exec-64] ==> Parameters: 1(Integer)
+2020-12-29 12:30:49,057 TRACE c.d.m.c.list [http-nio-8080-exec-64] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 12:30:49,057 TRACE c.d.m.c.list [http-nio-8080-exec-64] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 12:30:49,058 DEBUG c.d.m.c.list [http-nio-8080-exec-64] <==      Total: 1
+2020-12-29 12:30:49,078 INFO c.d.c.CommentController [http-nio-8080-exec-64] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:30:49,680 INFO c.d.c.ProductController [http-nio-8080-exec-65] >>> sv : list
+2020-12-29 12:30:49,680 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-65] Opening JDBC Connection
+2020-12-29 12:30:49,733 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-65] Created connection 997465983.
+2020-12-29 12:30:49,733 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-65] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3b741f7f]
+2020-12-29 12:30:49,734 DEBUG c.d.m.p.cnt [http-nio-8080-exec-65] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 12:30:49,734 DEBUG c.d.m.p.cnt [http-nio-8080-exec-65] ==> Parameters: 
+2020-12-29 12:30:49,739 TRACE c.d.m.p.cnt [http-nio-8080-exec-65] <==    Columns: count(pno)
+2020-12-29 12:30:49,740 TRACE c.d.m.p.cnt [http-nio-8080-exec-65] <==        Row: 2
+2020-12-29 12:30:49,741 DEBUG c.d.m.p.cnt [http-nio-8080-exec-65] <==      Total: 1
+2020-12-29 12:30:49,742 DEBUG c.d.m.p.list [http-nio-8080-exec-65] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 12:30:49,743 DEBUG c.d.m.p.list [http-nio-8080-exec-65] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 12:30:49,744 TRACE c.d.m.p.list [http-nio-8080-exec-65] <==    Columns: pno, pname, price, thumb
+2020-12-29 12:30:49,744 TRACE c.d.m.p.list [http-nio-8080-exec-65] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:30:49,745 TRACE c.d.m.p.list [http-nio-8080-exec-65] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:30:49,745 DEBUG c.d.m.p.list [http-nio-8080-exec-65] <==      Total: 2
+2020-12-29 12:30:52,659 INFO c.d.c.SupportController [http-nio-8080-exec-70] >>> sv : reg
+2020-12-29 12:30:52,659 INFO c.d.c.SupportController [http-nio-8080-exec-70] >>> thumb : s_20201228223039_딱따구리.jpg
+2020-12-29 12:30:52,660 INFO c.d.c.SupportController [http-nio-8080-exec-70] >>> pname : 강력한 딱따구리
+2020-12-29 12:30:52,660 INFO c.d.c.SupportController [http-nio-8080-exec-70] >>> price : 200
+2020-12-29 12:30:52,660 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-70] Opening JDBC Connection
+2020-12-29 12:30:52,708 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-70] Created connection 1670713823.
+2020-12-29 12:30:52,708 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-70] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@639511df]
+2020-12-29 12:30:52,709 DEBUG c.d.m.s.sreg [http-nio-8080-exec-70] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:30:52,711 DEBUG c.d.m.s.sreg [http-nio-8080-exec-70] ==> Parameters: s_20201228223039_딱따구리.jpg(String), 강력한 딱따구리(String), 200(Integer)
+2020-12-29 12:30:52,712 DEBUG c.d.m.s.sreg [http-nio-8080-exec-70] <==    Updates: 1
+2020-12-29 12:30:52,713 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-70] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@639511df]
+2020-12-29 12:30:54,418 INFO c.d.c.SupportController [http-nio-8080-exec-71] >>> sv : list
+2020-12-29 12:30:54,420 DEBUG c.d.m.s.list [http-nio-8080-exec-71] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:30:54,421 DEBUG c.d.m.s.list [http-nio-8080-exec-71] ==> Parameters: 
+2020-12-29 12:30:54,423 TRACE c.d.m.s.list [http-nio-8080-exec-71] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:30:54,423 TRACE c.d.m.s.list [http-nio-8080-exec-71] <==        Row: 4, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:30:54,424 DEBUG c.d.m.s.list [http-nio-8080-exec-71] <==      Total: 1
+2020-12-29 12:30:58,587 INFO c.d.c.ReportController [http-nio-8080-exec-76] >>>>>>>1
+2020-12-29 12:30:58,587 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-76] Opening JDBC Connection
+2020-12-29 12:30:58,632 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-76] Created connection 150789045.
+2020-12-29 12:30:58,632 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-76] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@8fcdbb5]
+2020-12-29 12:30:58,633 DEBUG c.d.m.r.rm [http-nio-8080-exec-76] ==>  Preparing: delete from don_support 
+2020-12-29 12:30:58,633 DEBUG c.d.m.r.rm [http-nio-8080-exec-76] ==> Parameters: 
+2020-12-29 12:30:58,635 DEBUG c.d.m.r.rm [http-nio-8080-exec-76] <==    Updates: 1
+2020-12-29 12:30:58,635 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-76] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@8fcdbb5]
+2020-12-29 12:30:58,638 DEBUG c.d.m.r.reg [http-nio-8080-exec-76] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:30:58,639 DEBUG c.d.m.r.reg [http-nio-8080-exec-76] ==> Parameters: 일반테스터(String), 강력한 딱따구리(String), 200(Integer), 1(Integer), test1(String)
+2020-12-29 12:30:58,644 DEBUG c.d.m.r.reg [http-nio-8080-exec-76] <==    Updates: 1
+2020-12-29 12:30:58,644 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-76] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@8fcdbb5]
+2020-12-29 12:32:36,731 INFO c.d.c.MemberController [http-nio-8080-exec-73] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@66d96704
+2020-12-29 12:32:39,734 INFO c.d.c.InsController [http-nio-8080-exec-78] >>> sv : list
+2020-12-29 12:32:41,019 INFO c.d.c.InsController [http-nio-8080-exec-74] >>> sv : detail
+2020-12-29 12:32:41,504 INFO c.d.c.CommentController [http-nio-8080-exec-74] >>ctxPath : /Donation
+2020-12-29 12:32:41,504 INFO c.d.c.CommentController [http-nio-8080-exec-74] >>svlPath : /comment
+2020-12-29 12:32:41,504 INFO c.d.c.CommentController [http-nio-8080-exec-74] check2
+2020-12-29 12:32:41,505 INFO c.d.c.CommentController [http-nio-8080-exec-74] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:32:42,294 INFO c.d.c.ProductController [http-nio-8080-exec-77] >>> sv : list
+2020-12-29 12:32:43,749 INFO c.d.c.SupportController [http-nio-8080-exec-75] >>> sv : reg
+2020-12-29 12:32:43,749 INFO c.d.c.SupportController [http-nio-8080-exec-75] >>> thumb : s_20201228223204_졸귀새9.jpg
+2020-12-29 12:32:43,749 INFO c.d.c.SupportController [http-nio-8080-exec-75] >>> pname : 너무나귀여운새
+2020-12-29 12:32:43,750 INFO c.d.c.SupportController [http-nio-8080-exec-75] >>> price : 500
+2020-12-29 12:32:43,750 DEBUG c.d.m.s.sreg [http-nio-8080-exec-75] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:32:43,751 DEBUG c.d.m.s.sreg [http-nio-8080-exec-75] ==> Parameters: s_20201228223204_졸귀새9.jpg(String), 너무나귀여운새(String), 500(Integer)
+2020-12-29 12:32:43,753 DEBUG c.d.m.s.sreg [http-nio-8080-exec-75] <==    Updates: 1
+2020-12-29 12:32:43,753 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-75] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@639511df]
+2020-12-29 12:32:45,751 INFO c.d.c.SupportController [http-nio-8080-exec-76] >>> sv : list
+2020-12-29 12:32:45,751 DEBUG c.d.m.s.list [http-nio-8080-exec-76] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:32:45,752 DEBUG c.d.m.s.list [http-nio-8080-exec-76] ==> Parameters: 
+2020-12-29 12:32:45,753 TRACE c.d.m.s.list [http-nio-8080-exec-76] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:32:45,753 TRACE c.d.m.s.list [http-nio-8080-exec-76] <==        Row: 5, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:32:45,755 DEBUG c.d.m.s.list [http-nio-8080-exec-76] <==      Total: 1
+2020-12-29 12:32:47,410 INFO c.d.c.ReportController [http-nio-8080-exec-71] >>>>>>>1
+2020-12-29 12:32:47,411 DEBUG c.d.m.r.rm [http-nio-8080-exec-71] ==>  Preparing: delete from don_support 
+2020-12-29 12:32:47,412 DEBUG c.d.m.r.rm [http-nio-8080-exec-71] ==> Parameters: 
+2020-12-29 12:32:47,417 DEBUG c.d.m.r.rm [http-nio-8080-exec-71] <==    Updates: 1
+2020-12-29 12:32:47,419 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-71] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@8fcdbb5]
+2020-12-29 12:32:47,421 DEBUG c.d.m.r.reg [http-nio-8080-exec-71] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:32:47,422 DEBUG c.d.m.r.reg [http-nio-8080-exec-71] ==> Parameters: 일반테스터(String), 너무나귀여운새(String), 500(Integer), 1(Integer), test1(String)
+2020-12-29 12:32:47,423 DEBUG c.d.m.r.reg [http-nio-8080-exec-71] <==    Updates: 1
+2020-12-29 12:32:47,423 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-71] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@8fcdbb5]
+2020-12-29 12:34:12,826 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-72] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 12:34:13,136 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-72] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:34:13,136 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-72] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:34:13,136 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-72] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:34:13,136 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-72] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:34:17,804 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-81] Opening JDBC Connection
+2020-12-29 12:34:18,290 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-81] Created connection 1965640462.
+2020-12-29 12:34:18,290 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-81] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@75294b0e]
+2020-12-29 12:34:18,297 DEBUG c.d.m.m.login [http-nio-8080-exec-81] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:34:18,323 DEBUG c.d.m.m.login [http-nio-8080-exec-81] ==> Parameters: tester2(String), 1111(String)
+2020-12-29 12:34:18,337 TRACE c.d.m.m.login [http-nio-8080-exec-81] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:34:18,337 TRACE c.d.m.m.login [http-nio-8080-exec-81] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 12:34:18,342 DEBUG c.d.m.m.login [http-nio-8080-exec-81] <==      Total: 1
+2020-12-29 12:34:18,343 INFO c.d.c.MemberController [http-nio-8080-exec-81] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@779160d2
+2020-12-29 12:34:19,200 INFO c.d.c.InsController [http-nio-8080-exec-74] >>> sv : list
+2020-12-29 12:34:19,201 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-74] Opening JDBC Connection
+2020-12-29 12:34:19,252 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-74] Created connection 552600743.
+2020-12-29 12:34:19,252 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-74] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@20f004a7]
+2020-12-29 12:34:19,253 DEBUG c.d.m.i.list [http-nio-8080-exec-74] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 12:34:19,253 DEBUG c.d.m.i.list [http-nio-8080-exec-74] ==> Parameters: 
+2020-12-29 12:34:19,254 TRACE c.d.m.i.list [http-nio-8080-exec-74] <==    Columns: ino, iname, thumb
+2020-12-29 12:34:19,255 TRACE c.d.m.i.list [http-nio-8080-exec-74] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 12:34:19,256 TRACE c.d.m.i.list [http-nio-8080-exec-74] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 12:34:19,256 DEBUG c.d.m.i.list [http-nio-8080-exec-74] <==      Total: 2
+2020-12-29 12:34:20,084 INFO c.d.c.InsController [http-nio-8080-exec-78] >>> sv : detail
+2020-12-29 12:34:20,085 DEBUG c.d.m.i.info [http-nio-8080-exec-78] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 12:34:20,088 DEBUG c.d.m.i.info [http-nio-8080-exec-78] ==> Parameters: 1(Integer)
+2020-12-29 12:34:20,089 TRACE c.d.m.i.info [http-nio-8080-exec-78] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 12:34:20,089 TRACE c.d.m.i.info [http-nio-8080-exec-78] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 12:34:20,090 DEBUG c.d.m.i.info [http-nio-8080-exec-78] <==      Total: 1
+2020-12-29 12:34:20,489 INFO c.d.c.CommentController [http-nio-8080-exec-78] >>ctxPath : /Donation
+2020-12-29 12:34:20,489 INFO c.d.c.CommentController [http-nio-8080-exec-78] >>svlPath : /comment
+2020-12-29 12:34:20,490 INFO c.d.c.CommentController [http-nio-8080-exec-78] check2
+2020-12-29 12:34:20,491 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-78] Opening JDBC Connection
+2020-12-29 12:34:20,552 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-78] Created connection 2099460667.
+2020-12-29 12:34:20,553 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-78] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@7d233a3b]
+2020-12-29 12:34:20,554 DEBUG c.d.m.c.list [http-nio-8080-exec-78] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 12:34:20,554 DEBUG c.d.m.c.list [http-nio-8080-exec-78] ==> Parameters: 1(Integer)
+2020-12-29 12:34:20,556 TRACE c.d.m.c.list [http-nio-8080-exec-78] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 12:34:20,557 TRACE c.d.m.c.list [http-nio-8080-exec-78] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 12:34:20,558 DEBUG c.d.m.c.list [http-nio-8080-exec-78] <==      Total: 1
+2020-12-29 12:34:20,571 INFO c.d.c.CommentController [http-nio-8080-exec-78] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:34:21,349 INFO c.d.c.ProductController [http-nio-8080-exec-70] >>> sv : list
+2020-12-29 12:34:21,351 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-70] Opening JDBC Connection
+2020-12-29 12:34:21,406 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-70] Created connection 14963246.
+2020-12-29 12:34:21,406 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-70] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@e4522e]
+2020-12-29 12:34:21,407 DEBUG c.d.m.p.cnt [http-nio-8080-exec-70] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 12:34:21,407 DEBUG c.d.m.p.cnt [http-nio-8080-exec-70] ==> Parameters: 
+2020-12-29 12:34:21,409 TRACE c.d.m.p.cnt [http-nio-8080-exec-70] <==    Columns: count(pno)
+2020-12-29 12:34:21,409 TRACE c.d.m.p.cnt [http-nio-8080-exec-70] <==        Row: 2
+2020-12-29 12:34:21,410 DEBUG c.d.m.p.cnt [http-nio-8080-exec-70] <==      Total: 1
+2020-12-29 12:34:21,411 DEBUG c.d.m.p.list [http-nio-8080-exec-70] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 12:34:21,412 DEBUG c.d.m.p.list [http-nio-8080-exec-70] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 12:34:21,413 TRACE c.d.m.p.list [http-nio-8080-exec-70] <==    Columns: pno, pname, price, thumb
+2020-12-29 12:34:21,414 TRACE c.d.m.p.list [http-nio-8080-exec-70] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:34:21,415 TRACE c.d.m.p.list [http-nio-8080-exec-70] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:34:21,416 DEBUG c.d.m.p.list [http-nio-8080-exec-70] <==      Total: 2
+2020-12-29 12:34:33,779 INFO c.d.c.SupportController [http-nio-8080-exec-80] >>> sv : reg
+2020-12-29 12:34:33,779 INFO c.d.c.SupportController [http-nio-8080-exec-80] >>> thumb : s_20201228223204_졸귀새9.jpg
+2020-12-29 12:34:33,779 INFO c.d.c.SupportController [http-nio-8080-exec-80] >>> pname : 너무나귀여운새
+2020-12-29 12:34:33,779 INFO c.d.c.SupportController [http-nio-8080-exec-80] >>> price : 500
+2020-12-29 12:34:33,780 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-80] Opening JDBC Connection
+2020-12-29 12:34:33,823 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-80] Created connection 760691730.
+2020-12-29 12:34:33,823 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-80] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2d573c12]
+2020-12-29 12:34:33,824 DEBUG c.d.m.s.sreg [http-nio-8080-exec-80] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:34:33,826 DEBUG c.d.m.s.sreg [http-nio-8080-exec-80] ==> Parameters: s_20201228223204_졸귀새9.jpg(String), 너무나귀여운새(String), 500(Integer)
+2020-12-29 12:34:33,828 DEBUG c.d.m.s.sreg [http-nio-8080-exec-80] <==    Updates: 1
+2020-12-29 12:34:33,829 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-80] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2d573c12]
+2020-12-29 12:34:35,572 INFO c.d.c.SupportController [http-nio-8080-exec-76] >>> sv : list
+2020-12-29 12:34:35,573 DEBUG c.d.m.s.list [http-nio-8080-exec-76] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:34:35,575 DEBUG c.d.m.s.list [http-nio-8080-exec-76] ==> Parameters: 
+2020-12-29 12:34:35,579 TRACE c.d.m.s.list [http-nio-8080-exec-76] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:34:35,579 TRACE c.d.m.s.list [http-nio-8080-exec-76] <==        Row: 6, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:34:35,581 DEBUG c.d.m.s.list [http-nio-8080-exec-76] <==      Total: 1
+2020-12-29 12:34:37,448 INFO c.d.c.ReportController [http-nio-8080-exec-79] >>>>>>>1
+2020-12-29 12:34:37,448 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-79] Opening JDBC Connection
+2020-12-29 12:34:37,508 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-79] Created connection 1080565452.
+2020-12-29 12:34:37,509 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-79] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@40681ecc]
+2020-12-29 12:34:37,510 DEBUG c.d.m.r.rm [http-nio-8080-exec-79] ==>  Preparing: delete from don_support 
+2020-12-29 12:34:37,511 DEBUG c.d.m.r.rm [http-nio-8080-exec-79] ==> Parameters: 
+2020-12-29 12:34:37,512 DEBUG c.d.m.r.rm [http-nio-8080-exec-79] <==    Updates: 1
+2020-12-29 12:34:37,513 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-79] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@40681ecc]
+2020-12-29 12:34:37,515 DEBUG c.d.m.r.reg [http-nio-8080-exec-79] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:34:37,517 DEBUG c.d.m.r.reg [http-nio-8080-exec-79] ==> Parameters: 일반테스터(String), 너무나귀여운새(String), 500(Integer), 1(Integer), test1(String)
+2020-12-29 12:34:37,522 DEBUG c.d.m.r.reg [http-nio-8080-exec-79] <==    Updates: 1
+2020-12-29 12:34:37,522 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-79] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@40681ecc]
+2020-12-29 12:34:37,525 DEBUG c.d.m.r.list [http-nio-8080-exec-79] ==>  Preparing: select * from don_report 
+2020-12-29 12:34:37,525 DEBUG c.d.m.r.list [http-nio-8080-exec-79] ==> Parameters: 
+2020-12-29 12:34:37,527 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==    Columns: rno, name, product, price, count, ins, regdate
+2020-12-29 12:34:37,528 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==        Row: 1, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:34:37,529 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==        Row: 2, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:34:37,530 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==        Row: 3, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:34:37,530 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==        Row: 4, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:30:58.0
+2020-12-29 12:34:37,531 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==        Row: 5, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:32:47.0
+2020-12-29 12:34:37,532 TRACE c.d.m.r.list [http-nio-8080-exec-79] <==        Row: 6, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:34:37.0
+2020-12-29 12:34:37,532 DEBUG c.d.m.r.list [http-nio-8080-exec-79] <==      Total: 6
+2020-12-29 12:38:06,194 DEBUG o.a.i.l.LogFactory [http-nio-8080-exec-80] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-29 12:38:06,514 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-80] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:38:06,514 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-80] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:38:06,515 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-80] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:38:06,515 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-80] PooledDataSource forcefully closed/removed all connections.
+2020-12-29 12:38:06,854 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-80] Opening JDBC Connection
+2020-12-29 12:38:07,352 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-80] Created connection 968032150.
+2020-12-29 12:38:07,353 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-80] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@39b2ff96]
+2020-12-29 12:38:07,359 DEBUG c.d.m.m.login [http-nio-8080-exec-80] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:38:07,392 DEBUG c.d.m.m.login [http-nio-8080-exec-80] ==> Parameters: tester2(String), 1111(String)
+2020-12-29 12:38:07,402 TRACE c.d.m.m.login [http-nio-8080-exec-80] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:38:07,402 TRACE c.d.m.m.login [http-nio-8080-exec-80] <==        Row: 일반테스터, tester2, 1234, null
+2020-12-29 12:38:07,408 DEBUG c.d.m.m.login [http-nio-8080-exec-80] <==      Total: 1
+2020-12-29 12:38:07,409 INFO c.d.c.MemberController [http-nio-8080-exec-80] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@5c66b15d
+2020-12-29 12:38:08,886 INFO c.d.c.InsController [http-nio-8080-exec-86] >>> sv : list
+2020-12-29 12:38:08,887 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-86] Opening JDBC Connection
+2020-12-29 12:38:08,942 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-86] Created connection 978560209.
+2020-12-29 12:38:08,942 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-86] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@3a53a4d1]
+2020-12-29 12:38:08,943 DEBUG c.d.m.i.list [http-nio-8080-exec-86] ==>  Preparing: select ino, iname, thumb from don_ins 
+2020-12-29 12:38:08,943 DEBUG c.d.m.i.list [http-nio-8080-exec-86] ==> Parameters: 
+2020-12-29 12:38:08,947 TRACE c.d.m.i.list [http-nio-8080-exec-86] <==    Columns: ino, iname, thumb
+2020-12-29 12:38:08,947 TRACE c.d.m.i.list [http-nio-8080-exec-86] <==        Row: 1, test1, s_20201228215254_퍼렁새2.jpg
+2020-12-29 12:38:08,948 TRACE c.d.m.i.list [http-nio-8080-exec-86] <==        Row: 2, test2, s_20201228215326_끼요오옷3.jpg
+2020-12-29 12:38:08,948 DEBUG c.d.m.i.list [http-nio-8080-exec-86] <==      Total: 2
+2020-12-29 12:38:10,193 INFO c.d.c.InsController [http-nio-8080-exec-89] >>> sv : detail
+2020-12-29 12:38:10,196 DEBUG c.d.m.i.info [http-nio-8080-exec-89] ==>  Preparing: select * from don_ins where ino=? 
+2020-12-29 12:38:10,197 DEBUG c.d.m.i.info [http-nio-8080-exec-89] ==> Parameters: 1(Integer)
+2020-12-29 12:38:10,202 TRACE c.d.m.i.info [http-nio-8080-exec-89] <==    Columns: ino, iname, loc, ipeople, icnt, imgfile, thumb, represent
+2020-12-29 12:38:10,203 TRACE c.d.m.i.info [http-nio-8080-exec-89] <==        Row: 1, test1, 테스트주소, 20, 테스트입니다, 퍼렁새2.jpg, s_20201228215254_퍼렁새2.jpg, tester1
+2020-12-29 12:38:10,203 DEBUG c.d.m.i.info [http-nio-8080-exec-89] <==      Total: 1
+2020-12-29 12:38:10,636 INFO c.d.c.CommentController [http-nio-8080-exec-89] >>ctxPath : /Donation
+2020-12-29 12:38:10,637 INFO c.d.c.CommentController [http-nio-8080-exec-89] >>svlPath : /comment
+2020-12-29 12:38:10,637 INFO c.d.c.CommentController [http-nio-8080-exec-89] check2
+2020-12-29 12:38:10,638 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-89] Opening JDBC Connection
+2020-12-29 12:38:10,707 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-89] Created connection 227407846.
+2020-12-29 12:38:10,707 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-89] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@d8df7e6]
+2020-12-29 12:38:10,708 DEBUG c.d.m.c.list [http-nio-8080-exec-89] ==>  Preparing: select * from don_comment where ino=? 
+2020-12-29 12:38:10,708 DEBUG c.d.m.c.list [http-nio-8080-exec-89] ==> Parameters: 1(Integer)
+2020-12-29 12:38:10,710 TRACE c.d.m.c.list [http-nio-8080-exec-89] <==    Columns: cno, ino, writer, comment, cregdate
+2020-12-29 12:38:10,711 TRACE c.d.m.c.list [http-nio-8080-exec-89] <==        Row: 25, 1, test1, 댓글도 테스트, 2020-12-28 21:53:46.0
+2020-12-29 12:38:10,713 DEBUG c.d.m.c.list [http-nio-8080-exec-89] <==      Total: 1
+2020-12-29 12:38:10,736 INFO c.d.c.CommentController [http-nio-8080-exec-89] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:38:11,508 INFO c.d.c.ProductController [http-nio-8080-exec-84] >>> sv : list
+2020-12-29 12:38:11,509 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-84] Opening JDBC Connection
+2020-12-29 12:38:11,556 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-84] Created connection 1814407125.
+2020-12-29 12:38:11,557 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-84] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@6c25a7d5]
+2020-12-29 12:38:11,557 DEBUG c.d.m.p.cnt [http-nio-8080-exec-84] ==>  Preparing: select count(pno) from don_product 
+2020-12-29 12:38:11,558 DEBUG c.d.m.p.cnt [http-nio-8080-exec-84] ==> Parameters: 
+2020-12-29 12:38:11,560 TRACE c.d.m.p.cnt [http-nio-8080-exec-84] <==    Columns: count(pno)
+2020-12-29 12:38:11,561 TRACE c.d.m.p.cnt [http-nio-8080-exec-84] <==        Row: 2
+2020-12-29 12:38:11,561 DEBUG c.d.m.p.cnt [http-nio-8080-exec-84] <==      Total: 1
+2020-12-29 12:38:11,562 DEBUG c.d.m.p.list [http-nio-8080-exec-84] ==>  Preparing: select pno, pname, price, thumb from don_product limit ?, ? 
+2020-12-29 12:38:11,563 DEBUG c.d.m.p.list [http-nio-8080-exec-84] ==> Parameters: 0(Integer), 10(Integer)
+2020-12-29 12:38:11,564 TRACE c.d.m.p.list [http-nio-8080-exec-84] <==    Columns: pno, pname, price, thumb
+2020-12-29 12:38:11,564 TRACE c.d.m.p.list [http-nio-8080-exec-84] <==        Row: 1, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:38:11,565 TRACE c.d.m.p.list [http-nio-8080-exec-84] <==        Row: 2, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:38:11,566 DEBUG c.d.m.p.list [http-nio-8080-exec-84] <==      Total: 2
+2020-12-29 12:38:13,572 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> sv : reg
+2020-12-29 12:38:13,573 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> thumb : s_20201228223204_졸귀새9.jpg
+2020-12-29 12:38:13,573 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> pname : 너무나귀여운새
+2020-12-29 12:38:13,573 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> price : 500
+2020-12-29 12:38:13,573 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-91] Opening JDBC Connection
+2020-12-29 12:38:13,626 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-91] Created connection 788922316.
+2020-12-29 12:38:13,626 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-91] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f05ffcc]
+2020-12-29 12:38:13,627 DEBUG c.d.m.s.sreg [http-nio-8080-exec-91] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:38:13,628 DEBUG c.d.m.s.sreg [http-nio-8080-exec-91] ==> Parameters: s_20201228223204_졸귀새9.jpg(String), 너무나귀여운새(String), 500(Integer)
+2020-12-29 12:38:13,633 DEBUG c.d.m.s.sreg [http-nio-8080-exec-91] <==    Updates: 1
+2020-12-29 12:38:13,633 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-91] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f05ffcc]
+2020-12-29 12:38:15,988 INFO c.d.c.SupportController [http-nio-8080-exec-81] >>> sv : list
+2020-12-29 12:38:15,989 DEBUG c.d.m.s.list [http-nio-8080-exec-81] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:38:15,990 DEBUG c.d.m.s.list [http-nio-8080-exec-81] ==> Parameters: 
+2020-12-29 12:38:15,996 TRACE c.d.m.s.list [http-nio-8080-exec-81] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:38:15,996 TRACE c.d.m.s.list [http-nio-8080-exec-81] <==        Row: 7, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:38:15,997 DEBUG c.d.m.s.list [http-nio-8080-exec-81] <==      Total: 1
+2020-12-29 12:38:17,366 INFO c.d.c.ReportController [http-nio-8080-exec-85] >>>>>>>1
+2020-12-29 12:38:17,367 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-85] Opening JDBC Connection
+2020-12-29 12:38:17,413 DEBUG o.a.i.d.p.PooledDataSource [http-nio-8080-exec-85] Created connection 372575457.
+2020-12-29 12:38:17,413 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-85] Setting autocommit to false on JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:38:17,414 DEBUG c.d.m.r.rm [http-nio-8080-exec-85] ==>  Preparing: delete from don_support 
+2020-12-29 12:38:17,417 DEBUG c.d.m.r.rm [http-nio-8080-exec-85] ==> Parameters: 
+2020-12-29 12:38:17,420 DEBUG c.d.m.r.rm [http-nio-8080-exec-85] <==    Updates: 1
+2020-12-29 12:38:17,421 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-85] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:38:17,423 DEBUG c.d.m.r.reg [http-nio-8080-exec-85] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:38:17,424 DEBUG c.d.m.r.reg [http-nio-8080-exec-85] ==> Parameters: 일반테스터(String), 너무나귀여운새(String), 500(Integer), 1(Integer), test1(String)
+2020-12-29 12:38:17,428 DEBUG c.d.m.r.reg [http-nio-8080-exec-85] <==    Updates: 1
+2020-12-29 12:38:17,428 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-85] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:38:17,430 DEBUG c.d.m.r.list [http-nio-8080-exec-85] ==>  Preparing: select * from don_report 
+2020-12-29 12:38:17,430 DEBUG c.d.m.r.list [http-nio-8080-exec-85] ==> Parameters: 
+2020-12-29 12:38:17,433 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==    Columns: rno, name, product, price, count, ins, regdate
+2020-12-29 12:38:17,434 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 1, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:38:17,435 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 2, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:38:17,435 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 3, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:38:17,436 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 4, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:30:58.0
+2020-12-29 12:38:17,436 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 5, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:32:47.0
+2020-12-29 12:38:17,437 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 6, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:34:37.0
+2020-12-29 12:38:17,438 TRACE c.d.m.r.list [http-nio-8080-exec-85] <==        Row: 7, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:38:17.0
+2020-12-29 12:38:17,438 DEBUG c.d.m.r.list [http-nio-8080-exec-85] <==      Total: 7
+2020-12-29 12:39:40,208 INFO c.d.c.MemberController [http-nio-8080-exec-93] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@5c66b15d
+2020-12-29 12:39:42,212 INFO c.d.c.InsController [http-nio-8080-exec-94] >>> sv : list
+2020-12-29 12:39:43,566 INFO c.d.c.InsController [http-nio-8080-exec-95] >>> sv : detail
+2020-12-29 12:39:43,923 INFO c.d.c.CommentController [http-nio-8080-exec-95] >>ctxPath : /Donation
+2020-12-29 12:39:43,924 INFO c.d.c.CommentController [http-nio-8080-exec-95] >>svlPath : /comment
+2020-12-29 12:39:43,924 INFO c.d.c.CommentController [http-nio-8080-exec-95] check2
+2020-12-29 12:39:43,924 INFO c.d.c.CommentController [http-nio-8080-exec-95] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:39:44,707 INFO c.d.c.ProductController [http-nio-8080-exec-90] >>> sv : list
+2020-12-29 12:39:46,060 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> sv : reg
+2020-12-29 12:39:46,060 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> thumb : s_20201228223039_딱따구리.jpg
+2020-12-29 12:39:46,061 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> pname : 강력한 딱따구리
+2020-12-29 12:39:46,061 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> price : 200
+2020-12-29 12:39:46,061 DEBUG c.d.m.s.sreg [http-nio-8080-exec-97] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:39:46,062 DEBUG c.d.m.s.sreg [http-nio-8080-exec-97] ==> Parameters: s_20201228223039_딱따구리.jpg(String), 강력한 딱따구리(String), 200(Integer)
+2020-12-29 12:39:46,064 DEBUG c.d.m.s.sreg [http-nio-8080-exec-97] <==    Updates: 1
+2020-12-29 12:39:46,065 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-97] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f05ffcc]
+2020-12-29 12:39:48,187 INFO c.d.c.SupportController [http-nio-8080-exec-96] >>> sv : list
+2020-12-29 12:39:48,188 DEBUG c.d.m.s.list [http-nio-8080-exec-96] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:39:48,189 DEBUG c.d.m.s.list [http-nio-8080-exec-96] ==> Parameters: 
+2020-12-29 12:39:48,191 TRACE c.d.m.s.list [http-nio-8080-exec-96] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:39:48,191 TRACE c.d.m.s.list [http-nio-8080-exec-96] <==        Row: 8, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:39:48,193 DEBUG c.d.m.s.list [http-nio-8080-exec-96] <==      Total: 1
+2020-12-29 12:39:49,823 INFO c.d.c.ReportController [http-nio-8080-exec-89] >>>>>>>1
+2020-12-29 12:39:49,824 DEBUG c.d.m.r.rm [http-nio-8080-exec-89] ==>  Preparing: delete from don_support 
+2020-12-29 12:39:49,826 DEBUG c.d.m.r.rm [http-nio-8080-exec-89] ==> Parameters: 
+2020-12-29 12:39:49,829 DEBUG c.d.m.r.rm [http-nio-8080-exec-89] <==    Updates: 1
+2020-12-29 12:39:49,830 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-89] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:39:49,835 DEBUG c.d.m.r.reg [http-nio-8080-exec-89] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:39:49,836 DEBUG c.d.m.r.reg [http-nio-8080-exec-89] ==> Parameters: 일반테스터(String), 강력한 딱따구리(String), 200(Integer), 1(Integer), test1(String)
+2020-12-29 12:39:49,838 DEBUG c.d.m.r.reg [http-nio-8080-exec-89] <==    Updates: 1
+2020-12-29 12:39:49,838 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-89] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:39:49,841 DEBUG c.d.m.r.list [http-nio-8080-exec-89] ==>  Preparing: select * from don_report 
+2020-12-29 12:39:49,842 DEBUG c.d.m.r.list [http-nio-8080-exec-89] ==> Parameters: 
+2020-12-29 12:39:49,843 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==    Columns: rno, name, product, price, count, ins, regdate
+2020-12-29 12:39:49,844 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 1, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:39:49,844 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 2, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:39:49,845 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 3, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:39:49,846 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 4, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:30:58.0
+2020-12-29 12:39:49,849 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 5, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:32:47.0
+2020-12-29 12:39:49,850 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 6, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:34:37.0
+2020-12-29 12:39:49,850 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 7, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:38:17.0
+2020-12-29 12:39:49,851 TRACE c.d.m.r.list [http-nio-8080-exec-89] <==        Row: 8, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:39:49.0
+2020-12-29 12:39:49,851 DEBUG c.d.m.r.list [http-nio-8080-exec-89] <==      Total: 8
+2020-12-29 12:41:50,834 INFO c.d.c.InsController [http-nio-8080-exec-96] >>> sv : list
+2020-12-29 12:41:52,511 INFO c.d.c.InsController [http-nio-8080-exec-89] >>> sv : detail
+2020-12-29 12:41:52,909 INFO c.d.c.CommentController [http-nio-8080-exec-89] >>ctxPath : /Donation
+2020-12-29 12:41:52,909 INFO c.d.c.CommentController [http-nio-8080-exec-89] >>svlPath : /comment
+2020-12-29 12:41:52,909 INFO c.d.c.CommentController [http-nio-8080-exec-89] check2
+2020-12-29 12:41:52,910 INFO c.d.c.CommentController [http-nio-8080-exec-89] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:41:53,588 INFO c.d.c.ProductController [http-nio-8080-exec-92] >>> sv : list
+2020-12-29 12:41:55,304 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> sv : reg
+2020-12-29 12:41:55,304 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> thumb : s_20201228223039_딱따구리.jpg
+2020-12-29 12:41:55,305 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> pname : 강력한 딱따구리
+2020-12-29 12:41:55,305 INFO c.d.c.SupportController [http-nio-8080-exec-91] >>> price : 200
+2020-12-29 12:41:55,305 DEBUG c.d.m.s.sreg [http-nio-8080-exec-91] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:41:55,306 DEBUG c.d.m.s.sreg [http-nio-8080-exec-91] ==> Parameters: s_20201228223039_딱따구리.jpg(String), 강력한 딱따구리(String), 200(Integer)
+2020-12-29 12:41:55,308 DEBUG c.d.m.s.sreg [http-nio-8080-exec-91] <==    Updates: 1
+2020-12-29 12:41:55,308 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-91] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f05ffcc]
+2020-12-29 12:41:56,737 INFO c.d.c.SupportController [http-nio-8080-exec-90] >>> sv : reg
+2020-12-29 12:41:56,738 INFO c.d.c.SupportController [http-nio-8080-exec-90] >>> thumb : s_20201228223204_졸귀새9.jpg
+2020-12-29 12:41:56,739 INFO c.d.c.SupportController [http-nio-8080-exec-90] >>> pname : 너무나귀여운새
+2020-12-29 12:41:56,739 INFO c.d.c.SupportController [http-nio-8080-exec-90] >>> price : 500
+2020-12-29 12:41:56,739 DEBUG c.d.m.s.sreg [http-nio-8080-exec-90] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:41:56,739 DEBUG c.d.m.s.sreg [http-nio-8080-exec-90] ==> Parameters: s_20201228223204_졸귀새9.jpg(String), 너무나귀여운새(String), 500(Integer)
+2020-12-29 12:41:56,741 DEBUG c.d.m.s.sreg [http-nio-8080-exec-90] <==    Updates: 1
+2020-12-29 12:41:56,742 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-90] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f05ffcc]
+2020-12-29 12:41:57,820 INFO c.d.c.SupportController [http-nio-8080-exec-93] >>> sv : list
+2020-12-29 12:41:57,821 DEBUG c.d.m.s.list [http-nio-8080-exec-93] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:41:57,822 DEBUG c.d.m.s.list [http-nio-8080-exec-93] ==> Parameters: 
+2020-12-29 12:41:57,824 TRACE c.d.m.s.list [http-nio-8080-exec-93] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:41:57,825 TRACE c.d.m.s.list [http-nio-8080-exec-93] <==        Row: 9, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:41:57,827 TRACE c.d.m.s.list [http-nio-8080-exec-93] <==        Row: 10, 너무나귀여운새, 500, s_20201228223204_졸귀새9.jpg
+2020-12-29 12:41:57,828 DEBUG c.d.m.s.list [http-nio-8080-exec-93] <==      Total: 2
+2020-12-29 12:42:06,633 INFO c.d.c.ReportController [http-nio-8080-exec-94] >>>>>>>3
+2020-12-29 12:42:06,635 DEBUG c.d.m.r.rm [http-nio-8080-exec-94] ==>  Preparing: delete from don_support 
+2020-12-29 12:42:06,637 DEBUG c.d.m.r.rm [http-nio-8080-exec-94] ==> Parameters: 
+2020-12-29 12:42:06,639 DEBUG c.d.m.r.rm [http-nio-8080-exec-94] <==    Updates: 2
+2020-12-29 12:42:06,640 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-94] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:42:06,642 DEBUG c.d.m.r.reg [http-nio-8080-exec-94] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:42:06,645 DEBUG c.d.m.r.reg [http-nio-8080-exec-94] ==> Parameters: 일반테스터(String), 강력한 딱따구리(String), 200(Integer), 3(Integer), test1(String)
+2020-12-29 12:42:06,649 DEBUG c.d.m.r.reg [http-nio-8080-exec-94] <==    Updates: 1
+2020-12-29 12:42:06,650 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-94] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:42:06,651 INFO c.d.c.ReportController [http-nio-8080-exec-94] >>>>>>>1
+2020-12-29 12:42:06,654 DEBUG c.d.m.r.rm [http-nio-8080-exec-94] ==>  Preparing: delete from don_support 
+2020-12-29 12:42:06,655 DEBUG c.d.m.r.rm [http-nio-8080-exec-94] ==> Parameters: 
+2020-12-29 12:42:06,657 DEBUG c.d.m.r.rm [http-nio-8080-exec-94] <==    Updates: 0
+2020-12-29 12:42:06,658 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-94] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:42:06,660 DEBUG c.d.m.r.reg [http-nio-8080-exec-94] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:42:06,661 DEBUG c.d.m.r.reg [http-nio-8080-exec-94] ==> Parameters: 일반테스터(String), 너무나귀여운새(String), 500(Integer), 1(Integer), test1(String)
+2020-12-29 12:42:06,663 DEBUG c.d.m.r.reg [http-nio-8080-exec-94] <==    Updates: 1
+2020-12-29 12:42:06,663 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-94] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:42:06,665 DEBUG c.d.m.r.list [http-nio-8080-exec-94] ==>  Preparing: select * from don_report 
+2020-12-29 12:42:06,665 DEBUG c.d.m.r.list [http-nio-8080-exec-94] ==> Parameters: 
+2020-12-29 12:42:06,667 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==    Columns: rno, name, product, price, count, ins, regdate
+2020-12-29 12:42:06,667 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 1, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:42:06,674 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 2, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:42:06,675 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 3, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:42:06,676 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 4, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:30:58.0
+2020-12-29 12:42:06,676 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 5, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:32:47.0
+2020-12-29 12:42:06,677 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 6, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:34:37.0
+2020-12-29 12:42:06,677 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 7, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:38:17.0
+2020-12-29 12:42:06,678 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 8, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:39:49.0
+2020-12-29 12:42:06,678 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 9, 일반테스터, 강력한 딱따구리, 200, 3, test1, 2020-12-29 12:42:06.0
+2020-12-29 12:42:06,679 TRACE c.d.m.r.list [http-nio-8080-exec-94] <==        Row: 10, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:42:06.0
+2020-12-29 12:42:06,679 DEBUG c.d.m.r.list [http-nio-8080-exec-94] <==      Total: 10
+2020-12-29 12:42:19,443 DEBUG c.d.m.m.login [http-nio-8080-exec-90] ==>  Preparing: select mname, mid, mphone, mins from don_member where mid=? and mpwd=? 
+2020-12-29 12:42:19,444 DEBUG c.d.m.m.login [http-nio-8080-exec-90] ==> Parameters: admin(String), 1111(String)
+2020-12-29 12:42:19,445 TRACE c.d.m.m.login [http-nio-8080-exec-90] <==    Columns: mname, mid, mphone, mins
+2020-12-29 12:42:19,446 TRACE c.d.m.m.login [http-nio-8080-exec-90] <==        Row: 관리자, admin, 1111, null
+2020-12-29 12:42:19,446 DEBUG c.d.m.m.login [http-nio-8080-exec-90] <==      Total: 1
+2020-12-29 12:42:19,446 INFO c.d.c.MemberController [http-nio-8080-exec-90] >>>>>>>>>>>>><<<<<<<<<<<com.donate.domain.MemberVO@6207eda3
+2020-12-29 12:42:20,402 INFO c.d.c.InsController [http-nio-8080-exec-95] >>> sv : list
+2020-12-29 12:42:21,803 INFO c.d.c.InsController [http-nio-8080-exec-94] >>> sv : detail
+2020-12-29 12:42:22,185 INFO c.d.c.CommentController [http-nio-8080-exec-94] >>ctxPath : /Donation
+2020-12-29 12:42:22,186 INFO c.d.c.CommentController [http-nio-8080-exec-94] >>svlPath : /comment
+2020-12-29 12:42:22,186 INFO c.d.c.CommentController [http-nio-8080-exec-94] check2
+2020-12-29 12:42:22,186 INFO c.d.c.CommentController [http-nio-8080-exec-94] >>>>jsonCmtStringData  [{"cregdate":"2020-12-28 21:53:46.0","cno":25,"comment":"댓글도 테스트","ino":1,"writer":"test1"}]
+2020-12-29 12:42:23,446 INFO c.d.c.ProductController [http-nio-8080-exec-98] >>> sv : list
+2020-12-29 12:42:35,939 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> sv : reg
+2020-12-29 12:42:35,939 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> thumb : s_20201228223039_딱따구리.jpg
+2020-12-29 12:42:35,939 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> pname : 강력한 딱따구리
+2020-12-29 12:42:35,940 INFO c.d.c.SupportController [http-nio-8080-exec-97] >>> price : 200
+2020-12-29 12:42:35,940 DEBUG c.d.m.s.sreg [http-nio-8080-exec-97] ==>  Preparing: insert into don_support (thumb, pname, price) values (?,?,?) 
+2020-12-29 12:42:35,941 DEBUG c.d.m.s.sreg [http-nio-8080-exec-97] ==> Parameters: s_20201228223039_딱따구리.jpg(String), 강력한 딱따구리(String), 200(Integer)
+2020-12-29 12:42:35,942 DEBUG c.d.m.s.sreg [http-nio-8080-exec-97] <==    Updates: 1
+2020-12-29 12:42:35,943 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-97] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@2f05ffcc]
+2020-12-29 12:42:43,371 INFO c.d.c.SupportController [http-nio-8080-exec-92] >>> sv : list
+2020-12-29 12:42:43,372 DEBUG c.d.m.s.list [http-nio-8080-exec-92] ==>  Preparing: select sno, pname, price, thumb from don_support 
+2020-12-29 12:42:43,373 DEBUG c.d.m.s.list [http-nio-8080-exec-92] ==> Parameters: 
+2020-12-29 12:42:43,374 TRACE c.d.m.s.list [http-nio-8080-exec-92] <==    Columns: sno, pname, price, thumb
+2020-12-29 12:42:43,375 TRACE c.d.m.s.list [http-nio-8080-exec-92] <==        Row: 11, 강력한 딱따구리, 200, s_20201228223039_딱따구리.jpg
+2020-12-29 12:42:43,377 DEBUG c.d.m.s.list [http-nio-8080-exec-92] <==      Total: 1
+2020-12-29 12:42:46,697 INFO c.d.c.ReportController [http-nio-8080-exec-93] >>>>>>>1
+2020-12-29 12:42:46,697 DEBUG c.d.m.r.rm [http-nio-8080-exec-93] ==>  Preparing: delete from don_support 
+2020-12-29 12:42:46,698 DEBUG c.d.m.r.rm [http-nio-8080-exec-93] ==> Parameters: 
+2020-12-29 12:42:46,701 DEBUG c.d.m.r.rm [http-nio-8080-exec-93] <==    Updates: 1
+2020-12-29 12:42:46,701 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-93] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:42:46,704 DEBUG c.d.m.r.reg [http-nio-8080-exec-93] ==>  Preparing: insert into don_report (name,product,price,count,ins) values(?,?,?,?,?) 
+2020-12-29 12:42:46,707 DEBUG c.d.m.r.reg [http-nio-8080-exec-93] ==> Parameters: 관리자(String), 강력한 딱따구리(String), 200(Integer), 1(Integer), test1(String)
+2020-12-29 12:42:46,709 DEBUG c.d.m.r.reg [http-nio-8080-exec-93] <==    Updates: 1
+2020-12-29 12:42:46,709 DEBUG o.a.i.t.j.JdbcTransaction [http-nio-8080-exec-93] Committing JDBC Connection [com.mysql.jdbc.JDBC4Connection@16350ce1]
+2020-12-29 12:42:46,713 DEBUG c.d.m.r.list [http-nio-8080-exec-93] ==>  Preparing: select * from don_report 
+2020-12-29 12:42:46,714 DEBUG c.d.m.r.list [http-nio-8080-exec-93] ==> Parameters: 
+2020-12-29 12:42:46,715 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==    Columns: rno, name, product, price, count, ins, regdate
+2020-12-29 12:42:46,715 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 1, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:42:46,716 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 2, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:42:46,716 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 3, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:29:41.0
+2020-12-29 12:42:46,716 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 4, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:30:58.0
+2020-12-29 12:42:46,717 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 5, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:32:47.0
+2020-12-29 12:42:46,717 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 6, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:34:37.0
+2020-12-29 12:42:46,718 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 7, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:38:17.0
+2020-12-29 12:42:46,718 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 8, 일반테스터, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:39:49.0
+2020-12-29 12:42:46,718 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 9, 일반테스터, 강력한 딱따구리, 200, 3, test1, 2020-12-29 12:42:06.0
+2020-12-29 12:42:46,719 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 10, 일반테스터, 너무나귀여운새, 500, 1, test1, 2020-12-29 12:42:06.0
+2020-12-29 12:42:46,719 TRACE c.d.m.r.list [http-nio-8080-exec-93] <==        Row: 11, 관리자, 강력한 딱따구리, 200, 1, test1, 2020-12-29 12:42:46.0
+2020-12-29 12:42:46,721 DEBUG c.d.m.r.list [http-nio-8080-exec-93] <==      Total: 11
