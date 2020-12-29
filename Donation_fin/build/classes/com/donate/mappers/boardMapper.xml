@@ -14,7 +14,7 @@
 	</select>
 	
 	<select id="list" resultType="bvo" parameterType="paging">
-		select bno, iname , bregdate, moddate, thumb, bcontent, bperson, bid
+		select bno, iname , bregdate, moddate, imgfile, thumb, bcontent, bperson, bid
 		from don_board
 		limit #{startNo}, #{pageSize}
 	</select>

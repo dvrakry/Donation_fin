@@ -31,11 +31,10 @@ public class BoardVO {
 		this.title = title;
 		this.bregdate = bregdate;
 		this.thumb = thumb;
+		this.imgfile = imgfile;
 		this.bid = bid;
 		this.bcontent = bcontent;
 		this.bperson = bperson;
-		this.imgfile = imgfile;
-
 	}
 	// 업데이트
 	public BoardVO(int bno, String bmoddate, String imgfile, String thumb, String bcontent, String bperson) {

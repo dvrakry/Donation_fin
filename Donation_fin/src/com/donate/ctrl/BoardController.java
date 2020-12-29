@@ -79,7 +79,7 @@ public class BoardController extends HttpServlet {
 				String uploadFileName = dateForm + "_" + fileName;
 					logger.info(">>>> uploadFileName: " + uploadFileName);
 					
-				bvo.setImgfile(uploadFileName);
+				bvo.setImgfile(fileName);
 				
 				String fileExt = fileName.substring(fileName.lastIndexOf(".")+1);
 				switch (fileExt) {

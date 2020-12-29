@@ -40,7 +40,7 @@
 							</ul>
 							<ul class="card-blog__info">
 								<li><a href="#"><i class="ti-comments-smiley"></i> 후원자: ${bvo.bperson } / 후원자ID: ${bvo.bid }</a></li>
-							S	
+			
 							</ul>
 							<i class='far fa-comment'></i> 감사인사:
 							<h4 class="card-blog__title">
