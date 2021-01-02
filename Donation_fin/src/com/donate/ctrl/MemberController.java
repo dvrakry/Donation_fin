@@ -99,7 +99,7 @@ public class MemberController extends HttpServlet {
 			String mid5 = request.getParameter("mid");
 			int deleteOk = msv.remove(mid5);
 			logger.info(">>> MemberController > delete : " + (deleteOk > 0 ? "삭제성공":"삭제실패"));
-			destPage = "member?sv=list";
+			destPage = "member?sv=logout";
 			break;
 			
 		case "check":

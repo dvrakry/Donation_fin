@@ -5,6 +5,7 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.donate.domain.Paging;
 import com.donate.domain.ReportVO;
 import com.donate.persistence.ReportDAO;
 import com.donate.persistence.ReportDAOImp;
@@ -22,8 +23,16 @@ public class ReportServiceImp implements ReportService {
 	}
 
 	@Override
-	public List<ReportVO> getList() {
-		return rdao.selectList();
+	public List<ReportVO> getList(Paging paging) {
+		return rdao.selectList(paging);
+	}
+	@Override
+	public int totalCount(String name) {
+		return rdao.selectCount(name);
+	}
+	@Override
+	public List<ReportVO> getList(String ins) {
+		return rdao.selectList(ins);
 	}
 
 }

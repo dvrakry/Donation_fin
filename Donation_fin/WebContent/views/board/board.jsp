@@ -5,7 +5,7 @@
 <section class="blog">
 	<div class="container">
 		<div class="section-intro pb-60px">
-			<p>기부내용을 바로 확인할수있는</p>
+			<p>기부내용을 바로 확인할수있는 ${ses.mno }, ${ses.mname }</p>
 			<h2>
 				감사<span class="section-intro__style">게시판</span>
 			</h2>

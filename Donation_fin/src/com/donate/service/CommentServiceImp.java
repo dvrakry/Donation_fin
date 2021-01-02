@@ -22,11 +22,30 @@ public class CommentServiceImp implements CommentService {
 		logger.info(">>>isOk");
 		return isOk;
 	}
+	
+	@Override
+	public int add_m(CommentVO cvo) {
+		int isOk_m = cdao.insert_m(cvo);
+		logger.info(">>>isOk");
+		return isOk_m;
+	}
+	
+	
+	
 
 	@Override
 	public List<CommentVO> getList(Integer ino) {
 		return cdao.selectList(ino);
 	}
+	
+	
+	@Override
+	public List<CommentVO> getList_m(int mno) {
+		return cdao.selectList_m(mno);
+	}
+	
+	
+	
 
 	@Override
 	public int modify(CommentVO cvo) {
@@ -38,5 +57,7 @@ public class CommentServiceImp implements CommentService {
 	public int remove(Integer cno) {
 		return cdao.delete(cno);
 	}
+	
+	
 
 }

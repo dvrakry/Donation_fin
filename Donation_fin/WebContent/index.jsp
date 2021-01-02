@@ -42,6 +42,10 @@
 	<c:when test="${view eq 'mModify' }">
 		<c:set var="jsp" value="member/modify.jsp"/>
 	</c:when>
+	<c:when test="${view eq 'detail' }">
+		<c:set var="jsp" value="member/detail.jsp"/>
+	</c:when>
+	
 	<c:when test="${view eq 'board' }">
 		<c:set var="jsp" value="board/board.jsp"/>
 	</c:when>

@@ -8,6 +8,8 @@ public class CommentVO {
 	private String comment;
 	private String cregdate;
 	
+	private int mno;
+	
 	
 	public CommentVO() {
 		 
@@ -19,6 +21,8 @@ public class CommentVO {
 		this.writer = writer;
 		this.comment = comment;
 	}
+	
+	
 	public int getCno() {
 		return cno;
 	}
@@ -48,6 +52,18 @@ public class CommentVO {
 	}
 	public void setCregdate(String cregdate) {
 		this.cregdate = cregdate;
+	}
+
+	
+	
+	
+	
+	public int getMno() {
+		return mno;
+	}
+
+	public void setMno(int mno) {
+		this.mno = mno;
 	}
 	
 	

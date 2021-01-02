@@ -57,6 +57,29 @@ public class CommentController extends HttpServlet {
 			
 			out.print(isOk);
 			break;	
+			
+			
+			
+		case "/add_m":
+			logger.info("check1");
+			int mno = Integer.parseInt(request.getParameter("mno"));
+			logger.info("!!!!!!!!!!!!!mno" + mno);
+			String writer_m = request.getParameter("writer");
+			String comment_m = request.getParameter("comment");
+			CommentVO cvo_m = new CommentVO(mno,writer_m,comment_m);
+			int isOk_m = csv.add_m(cvo_m);
+			PrintWriter out_m = response.getWriter();
+			
+			out_m.print(isOk_m);
+			break;	
+		
+		
+		
+		
+		
+		
+		
+		
 		case "/list":
 			logger.info("check2");
 			int ino2 = Integer.parseInt(request.getParameter("ino"));
@@ -76,6 +99,36 @@ public class CommentController extends HttpServlet {
 			PrintWriter out2 = response.getWriter();
 			out2.print(jsonCmtStringData);
 			break;
+			
+		
+		
+		
+		case "/list_m":
+			logger.info("check2");
+			int mno2 = Integer.parseInt(request.getParameter("mno"));
+			logger.info("!!!!!!!!!!!!!!!!!>>>>>" + mno2);
+			List<CommentVO>cList_m =csv.getList_m(mno2);
+			JSONArray cmtArr_m = new JSONArray();
+			for (int i = 0; i < cList_m.size(); i++) {
+				JSONObject cmtObj = new JSONObject();
+				cmtObj.put("cno", cList_m.get(i).getCno());
+				cmtObj.put("mno", cList_m.get(i).getMno());
+				cmtObj.put("writer", cList_m.get(i).getWriter());
+				cmtObj.put("comment", cList_m.get(i).getComment());
+				cmtObj.put("cregdate", cList_m.get(i).getCregdate());
+				cmtArr_m.add(cmtObj);
+			}
+			logger.info("#$%#$%#$^#$^ cmtArr_m: " + cmtArr_m);
+			String jsonCmtStringData_m = cmtArr_m.toJSONString();
+			logger.info("#$%#$%#$^#$^ jsonCmtStringData_m: " + jsonCmtStringData_m);
+			PrintWriter out2_m = response.getWriter();
+			logger.info("#$%#$%#$^#$^ out2_m : " + out2_m);
+			out2_m.print(jsonCmtStringData_m);
+			break;
+			
+			
+			
+			
 
 		case "/rm":
 			int cno = Integer.parseInt(request.getParameter("cno"));

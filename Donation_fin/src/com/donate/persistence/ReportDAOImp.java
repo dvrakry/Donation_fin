@@ -6,6 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.donate.domain.Paging;
 import com.donate.domain.ReportVO;
 import com.donate.orm.DBBuilder;
 
@@ -29,8 +30,17 @@ public class ReportDAOImp implements ReportDAO {
 	}
 
 	@Override
-	public List<ReportVO> selectList() {
-		return sql.selectList(namespace+".list");
+	public List<ReportVO> selectList(Paging paging) {
+		return sql.selectList(namespace+".list",paging);
 	}
+	@Override
+	public int selectCount(String name) {
+		return sql.selectOne(namespace+".cnt",name);
+	}
+	@Override
+	public List<ReportVO> selectList(String ins) {
+		return sql.selectList(namespace+".rpt",ins);
+	}
+	
 
 }

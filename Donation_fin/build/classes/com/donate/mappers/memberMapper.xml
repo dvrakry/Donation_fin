@@ -8,17 +8,17 @@
 		values (#{mname},#{mid},#{mpwd},#{mphone}, #{mins})
 	</insert>
 	<select id="login" parameterType="mvo" resultType="mvo">
-	    select mname, mid, mphone, mins
+	    select mno, mname, mid, mphone, mins
 	    from don_member
 	    where mid=#{mid} 
         and mpwd=#{mpwd}
 	</select>
 	<select id="list" resultType="mvo">
-		select mname, mid, mphone, mins
+		select mno, mname, mid, mphone, mins
 		from don_member
 	</select>
 	<select id="info" parameterType="java.lang.String" resultType="mvo">
-		select mid, mname, mpwd, mphone 
+		select mno, mid, mname, mpwd, mphone 
 		from don_member
 		where mid = #{mid} 
 	</select>

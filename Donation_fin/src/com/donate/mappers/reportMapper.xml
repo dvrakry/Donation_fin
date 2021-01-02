@@ -8,10 +8,17 @@
 		values(#{name},#{product},#{price},#{count},#{ins})
 	</insert>
 	
-	<select id="list" resultType="rvo">
-		select * from don_report
+	<select id="list" resultType="rvo" parameterType="paging">
+		select * from don_report where name=#{name}
+		limit #{startNo}, #{pageSize}
 	</select>
 	<delete id="rm">
 		delete from don_support
 	</delete>
+	<select id="cnt" parameterType="java.lang.String" resultType="java.lang.Integer">
+		select count(rno) from don_report where name=#{name}
+	</select>
+	<select id="rpt" parameterType="java.lang.String" resultType="rvo">
+		select name,product,count from don_report where ins=#{ins}
+	</select>
 </mapper>

@@ -93,6 +93,8 @@
 											<li class="nav-item"><i class="fa fa-user"></i>${ses.mname }님
 											</li>
 											<li class="nav-item"><a class="button button-header"
+												href="./report?sv=list_m&mname=${ses.mname }">마이페이지</a></li>
+											<li class="nav-item"><a class="button button-header"
 												href="./member?sv=logout">LogOut</a></li>
 										</ul>
 									</c:otherwise>

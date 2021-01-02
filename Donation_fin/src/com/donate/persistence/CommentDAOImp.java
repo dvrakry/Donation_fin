@@ -24,12 +24,37 @@ public class CommentDAOImp implements CommentDAO {
 		sql.commit();
 		return isOk;
 	}
+	
+	
+	
+	
+	@Override
+	public int insert_m(CommentVO cvo) {
+		int isOk_m = sql.insert(namespace+".add_m",cvo);
+		sql.commit();
+		return isOk_m;
+	}
+	
+	
+	
 
 	@Override
 	public List<CommentVO> selectList(Integer ino) {
 		return sql.selectList(namespace+".list",ino);
 	}
+	
+	
+	
+	
+	@Override
+	public List<CommentVO> selectList_m(int mno) {
+		return sql.selectList(namespace+".list_m",mno);
+	}
+	
+	
 
+	
+	
 	@Override
 	public int update(CommentVO cvo) {
 		// TODO Auto-generated method stub
@@ -42,5 +67,7 @@ public class CommentDAOImp implements CommentDAO {
 		sql.commit();
 		return isOk;
 	}
+
+	
 
 }

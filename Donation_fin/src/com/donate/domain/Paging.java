@@ -10,6 +10,7 @@ public class Paging {
 	public int totalPage; // 총 페이지 수
 	public int prevBlock; // 이전 페이지 번호
 	public int nextBlock; // 다음 페이지 번호
+	public String name;
 	
 	public Paging() {}
 	public Paging(int clPage, int total) {
@@ -22,6 +23,18 @@ public class Paging {
 		this.nextBlock = this.prevBlock + this.pageBlock + 1;
 		this.nextBlock = this.nextBlock > this.totalPage 
 				? this.totalPage : this.nextBlock;
+	}
+	public Paging(int clPage, int total, String name) {
+		this.clPage = clPage;
+		this.total = total;
+		this.endNo = clPage * pageSize;
+		this.startNo = (endNo - pageSize);
+		this.totalPage = (total/pageSize) + 1;
+		this.prevBlock = ((this.clPage-1)/this.pageBlock)*this.pageBlock;
+		this.nextBlock = this.prevBlock + this.pageBlock + 1;
+		this.nextBlock = this.nextBlock > this.totalPage 
+				? this.totalPage : this.nextBlock;
+		this.name = name;
 	}
 	public int getPageSize() {
 		return pageSize;
@@ -77,4 +90,11 @@ public class Paging {
 	public void setNextBlock(int nextBlock) {
 		this.nextBlock = nextBlock;
 	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	
 }

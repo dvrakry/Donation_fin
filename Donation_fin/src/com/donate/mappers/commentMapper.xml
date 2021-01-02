@@ -7,9 +7,30 @@
 		insert into don_comment (ino, writer, comment)
 		values (#{ino}, #{writer}, #{comment})
 	</insert>
+	
+	<insert id="add_m" parameterType="cvo">
+		insert into don_comment (mno, writer, comment)
+		values (#{ino}, #{writer}, #{comment})
+	</insert>
+	
+	
+	
+	
+	
+	
 	<select id="list" parameterType="java.lang.Integer" resultType="cvo">
-		select * from don_comment where ino=#{ino}
+		select * from don_comment
 	</select>
+	
+	
+	<select id="list_m" parameterType="java.lang.Integer" resultType="cvo">
+		select * from don_comment
+	</select>
+	
+	
+	
+	
+	
 	<delete id="rm" parameterType="java.lang.Integer">
 		delete from don_comment where cno=#{cno}
 	</delete>

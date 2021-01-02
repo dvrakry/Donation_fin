@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
   <!--================Single Product Area =================-->
+
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 posts-list">
@@ -16,6 +18,7 @@
 						<h5>후원자: ${bvo.bperson }</h5>
 						<h5>후원자ID: ${bvo.bid }</h5>
 						<p>감사의 인사: ${bvo.bcontent }</p>
+						<p>테스트: ${ses.mno }, ${ses.mname }
 					</div>
 				</div>
 			</div>
@@ -54,20 +57,113 @@
 		</table>
 		<div id="formTagZone"></div>
 	</div>
-	<!-- 
+	<script src="resources/vendors/jquery/jquery-3.2.1.min.js"></script>
 	<script>
 		$(function(){
 			bnoVal = '<c:out value="${bvo.bno}"/>';
-			writerVal = '<c:out value="${bvo.iname}"/>';
+			mnoVal = '<c:out value="${ses.mno}"/>';
+			console.log(mnoVal);
+			writerVal = '<c:out value="${ses.mname}"/>';
 			getlistComment(bnoVal);
 		});
 		function getlistComment(bnoVal){
 			$("#cmtList").html("");
 			$.ajax({
-				url:"./comment/list"
-			})
+				url:"./comment/list_m",
+				type:"post",
+				data:{mno:mnoVal},
+				success: function(list){
+					let listObj = JSON.parse(list);
+					printListComment(listObj);
+				},
+				error:function(msg){
+				}
+			});
 		};
-	
+		function printListComment(listObj){
+			for(let cvo of listObj){
+				let lis = '';
+					lis += '<tr><td class="z1"></td> <td class="z2"></td> <td class="z3"></td>';
+					lis += '<td><button class="rmBtn">삭제</button></td>';
+					lis += '<td><input type="hidden" name="cnumber" class="z4"></td>';
+					lis += '<td><input type="hidden" name="mnumber" class="z5"></td></tr>'
+				$("#cmtList").append(lis);
+				
+			for(let key in cvo){
+				switch (key) {
+				case "writer":
+					$("#cmtList tr:last-child .z1").text('['+ cvo[key]+ ']');
+					break;
+				 case "comment":
+                     $("#cmtList tr:last-child .z2").html(cvo[key]);
+                     break;
+                  case "cregdate":
+                     $("#cmtList tr:last-child .z3").text(cvo[key]);
+                     break;
+                  case "cno":
+                 	$("#cmtList tr:last-child .z4").text(cvo[key]);
+                 	break;
+                 case "mno":
+                 	$("#cmtList tr:last-child .z5").text(cvo[key]);
+                 	break;
+				default:
+					break;
+				}
+			}
+			}
+		}
+		
+		
+		$(document).on("click",".rmBtn" ,function(){
+			let cnoVal = $(this).closest("tr").find(".z4").text();
+			let mnoVal = $(this).closest("tr").find(".z5").text();
+			let sesVal = '<c:out value="${ses.mno }"/>';
+			if(mnoVal == sesVal){
+			$.ajax({
+			url: "./comment/rm",
+			type: "post",
+			data: {cno:cnoVal, mno:mnoVal},
+			success: function(result){
+				let res = parseInt(result);
+				if(res>0){
+					alert("댓글 삭제 완료");
+					getlistComment(mnoVal);
+					$("#cmt").val("");
+				}else{
+					alert("댓글 삭제 실패! \n 관리자에게 문의하세요.")
+				}
+			},
+			error: function(msg){
+				alert(msg);
+			}
+		});
+			}else{
+				alert("댓글 삭제 실패! \n 관리자에게 문의하세요.")
+			}
+	});
+		
+		$("#cmtBtn").on("click",function(){
+			let cmtVal = $("#cmt").val();
+			$.ajax({
+				url: "./comment/add_m",
+				type: "post",
+				data: {mno:mnoVal, writer:writerVal, comment:cmtVal},
+				success: function(result){
+					let res = parseInt(result);
+					if(res>0){
+						alert("댓글 등록 완료");
+						getlistComment(mnoVal);
+						$("#cmt").val("");
+					}else{
+						alert("댓글 등록 실패! \n 관리자에게 문의하세요.");
+					}
+				},
+				error: function(msg){
+					alert(msg);
+				}
+			});
+		});
+		
 	</script>
 	
 	
@@ -75,6 +171,6 @@
 	
 	
 	
-	 -->
+	
 	
 	

@@ -47,12 +47,9 @@
 </div>
 
 <div id="formTagZone"></div>
-<<<<<<< HEAD
-<script>
-=======
 
-<script> //스크립트로 진행할지 고민
->>>>>>> refs/remotes/origin/master
+
+<script>
 	let modBtn = $(".modBtn");
 	modBtn.on("click", function(){
 		let mid = $(this).closest("tr").find("h5").text();
