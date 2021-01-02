@@ -20,11 +20,13 @@
 	
 	<select id="list" parameterType="java.lang.Integer" resultType="cvo">
 		select * from don_comment
+		order by cregdate desc
 	</select>
 	
 	
 	<select id="list_m" parameterType="java.lang.Integer" resultType="cvo">
 		select * from don_comment
+		order by cregdate desc
 	</select>
 	
 	
