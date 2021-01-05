@@ -4,65 +4,76 @@
 
   <!--================Single Product Area =================-->
 
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 posts-list">
-				<div class="single-post row">
-					<div class="col-lg-12">
-						<div class="feature-img">
-							<img class="img-fluid" src="upload/${bvo.imgfile }" alt="">
-						</div>
-					</div>
-					<div class="col-lg-12 col-md-12 blog_details">
-						<h3>시설명: ${bvo.iname }</h3>
-						<h5>후원자: ${bvo.bperson }</h5>
-						<h5>후원자ID: ${bvo.bid }</h5>
-						<p>감사의 인사: ${bvo.bcontent }</p>
-						<p>테스트: ${ses.mno }, ${ses.mname }
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8 posts-list">
+			<div class="single-post row">
+				<div class="col-lg-12">
+					<div class="feature-img">
+						<img class="img-fluid" src="upload/${bvo.imgfile }" alt="">
 					</div>
 				</div>
+				<div class="col-lg-12 col-md-12 blog_details">
+					<h3>시설명: ${bvo.iname }</h3>
+					<h5>후원자: ${bvo.bperson }</h5>
+					<h5>후원자ID: ${bvo.bid }</h5>
+					<p>감사의 인사: ${bvo.bcontent }</p>
+					<p>테스트: ${bvo.bno }</p>
+				</div>
 			</div>
-			<div class="col-lg-4"></div>
-		
-			<c:choose>
-				<c:when test="${ses.mid eq bvo.bid }">
-					<button type="button" onclick="location.href='./board?sv=mod&bno=${bvo.bno}'"
-					class="button button-register w-80">수정</button>
-					<button type="button" onclick="location.href='./board?sv=delete&bno=${bvo.bno}'"
-					class="button button-register w-80">삭제</button>
-				</c:when>
-				<c:otherwise>
-					<button type="button" onclick="alert('본인이 작성한 글만 수정할 수 있습니다.');return false;"
-					class="button button-register w-80">수정</button>
-					<button type="button" onclick="alert('본인이 작성한 글만 삭제할 수 있습니다.');return false;"
-					class="button button-register w-80">삭제</button>
-				</c:otherwise>
-			</c:choose>
-		
 		</div>
-		<br> <br>
-		<c:if test="${ses.mname ne null || ses.mname ne '' }">
-			<form>
-				<input type="text" id="cmt" class="f"
-					placeholder="Enter Your Comment"
-					style="width: 70%; margin-right: 10px;">
+		<div class="col-lg-4"></div>
 
-				<button class="btn btn-default" type="button" id="cmtBtn">
-					입력</button>
+		<c:choose>
+			<c:when test="${ses.mid eq bvo.bid || ses.mid eq 'admin'}">
+				<button type="button"
+					onclick="location.href='./board?sv=mod&bno=${bvo.bno}'"
+					class="button button-register w-80">수정</button>
+				<button type="button"
+					onclick="location.href='./board?sv=delete&bno=${bvo.bno}'"
+					class="button button-register w-80">삭제</button>
+				<button type="button" onclick="location.href='./board?sv=list'"
+					class="button button-register w-80">목록으로</button>
+			</c:when>
+			<c:otherwise>
+				<button type="button"
+					onclick="alert('본인이 작성한 글만 수정할 수 있습니다.');return false;"
+					class="button button-register w-80">수정</button>
+				<button type="button"
+					onclick="alert('본인이 작성한 글만 삭제할 수 있습니다.');return false;"
+					class="button button-register w-80">삭제</button>
+				<button type="button" onclick="location.href='./board?sv=list'"
+				class="button button-register w-80">목록으로</button>
+			</c:otherwise>
+		</c:choose>
 
-			</form>
-		</c:if>
-		<table id="cmtList">
+	</div>
+	<br> <br>
+	<c:if test="${ses.mname ne null || ses.mname ne '' }">
+		<form>
+			<input type="text" id="cmt" class="f"
+				placeholder="Enter Your Comment"
+				style="width: 70%; margin-right: 10px;">
 
-		</table>
+			<button class="btn btn-default" type="button" id="cmtBtn">
+				입력</button>
+
+		</form>
+	</c:if>
+	<table id="cmtList">
+	</table>
+	<div>
+		<input type="hidden" name="bno" value="${bvo.bno }" id="bno">
+	</div>
 		<div id="formTagZone"></div>
 	</div>
-	<script src="resources/vendors/jquery/jquery-3.2.1.min.js"></script>
+<script src="resources/vendors/jquery/jquery-3.2.1.min.js"></script>
 	<script>
 		$(function(){
 			bnoVal = '<c:out value="${bvo.bno}"/>';
 			mnoVal = '<c:out value="${ses.mno}"/>';
 			console.log(mnoVal);
+			console.log(bnoVal);
 			writerVal = '<c:out value="${ses.mname}"/>';
 			getlistComment(bnoVal);
 		});
@@ -71,7 +82,7 @@
 			$.ajax({
 				url:"./comment/list_m",
 				type:"post",
-				data:{mno:mnoVal},
+				data:{mno:mnoVal, bno:bnoVal},
 				success: function(list){
 					let listObj = JSON.parse(list);
 					printListComment(listObj);
@@ -127,7 +138,7 @@
 				let res = parseInt(result);
 				if(res>0){
 					alert("댓글 삭제 완료");
-					getlistComment(mnoVal);
+					getlistComment(bnoVal);
 					$("#cmt").val("");
 				}else{
 					alert("댓글 삭제 실패! \n 관리자에게 문의하세요.")
@@ -143,16 +154,17 @@
 	});
 		
 		$("#cmtBtn").on("click",function(){
+			let bnoVal =  $("#bno").val();
 			let cmtVal = $("#cmt").val();
 			$.ajax({
 				url: "./comment/add_m",
 				type: "post",
-				data: {mno:mnoVal, writer:writerVal, comment:cmtVal},
+				data: {mno:mnoVal, bno:bnoVal, writer:writerVal, comment:cmtVal},
 				success: function(result){
 					let res = parseInt(result);
 					if(res>0){
 						alert("댓글 등록 완료");
-						getlistComment(mnoVal);
+						getlistComment(bnoVal);
 						$("#cmt").val("");
 					}else{
 						alert("댓글 등록 실패! \n 관리자에게 문의하세요.");

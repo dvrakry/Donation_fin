@@ -1,7 +1,7 @@
 package com.donate.domain;
 
 public class Paging {
-	public int pageSize = 10; // 한 페이지에 보여줄 글 수
+	public int pageSize = 12; // 한 페이지에 보여줄 글 수
 	public int pageBlock = 5; // 페이지네이션의 수
 	public int clPage; // 클릭한 페이지 넘버
 	public int total; // DB에 등록된 총 글의 수

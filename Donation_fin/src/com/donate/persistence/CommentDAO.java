@@ -10,6 +10,6 @@ public interface CommentDAO {
 	public int update(CommentVO cvo);
 	public int delete(int cno);
 	
-	public List<CommentVO> selectList_m(int mno);
+	public List<CommentVO> selectList_m(int mno, int bno);
 	public int insert_m(CommentVO cvo);
 }

@@ -40,8 +40,8 @@ public class CommentServiceImp implements CommentService {
 	
 	
 	@Override
-	public List<CommentVO> getList_m(int mno) {
-		return cdao.selectList_m(mno);
+	public List<CommentVO> getList_m(int mno, int bno) {
+		return cdao.selectList_m(mno, bno);
 	}
 	
 	

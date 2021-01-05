@@ -47,8 +47,8 @@ public class CommentDAOImp implements CommentDAO {
 	
 	
 	@Override
-	public List<CommentVO> selectList_m(int mno) {
-		return sql.selectList(namespace+".list_m",mno);
+	public List<CommentVO> selectList_m(int mno, int bno) {
+		return sql.selectList(namespace+".list_m", bno);
 	}
 	
 	

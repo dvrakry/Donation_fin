@@ -72,6 +72,9 @@
 	<c:when test="${view eq 'sli' }">
 		<c:set var="jsp" value="support/list.jsp"/>
 	</c:when>
+	<c:when test="${view eq 'contact' }">
+		<c:set var="jsp" value="contact/contact.jsp"/>
+	</c:when>
 </c:choose>
 <jsp:include page="views/common/11_header.jsp"></jsp:include>
 <jsp:include page="views/${jsp }"></jsp:include>

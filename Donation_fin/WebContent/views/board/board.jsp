@@ -1,6 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<style>
+#thumb:hover{
+	cursor: pointer;
+}
+</style>
 <c:set var="bvo" value="${bList }"/>
 <section class="blog">
 	<div class="container">
@@ -28,10 +33,10 @@
 		</c:choose>
 		<div class="row">
 			<c:forEach items="${bList }" var="bvo">
-				<div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
+				<div class="col-md-6 col-lg-4 mb-4 mb-lg-0" id="thumb">
 					<div class="card card-blog">
 						<div class="card-blog__img">
-							<img class="card-img rounded-0"
+							<img class="card-img rounded-0" onclick="location.href='./board?sv=info&bno=${bvo.bno }'"
 								src="upload/${bvo.thumb }" alt="" style="height:270px; width:270px;">
 						</div>
 						<div class="card-body">
@@ -48,11 +53,20 @@
 							</h4>
 							<!-- 디테일~~ 1111-->
 							<a class="card-blog__link" href="./board?sv=info&bno=${bvo.bno }">Read More</a>
-								
+								<c:choose>
+								<c:when test="${ses.mid eq bvo.bid || ses.mid eq 'admin'}">
 								<button type="button" onclick="location.href='./board?sv=mod&bno=${bvo.bno}'"
 								class="btn btn-outline-info">수정</button>
 								<button type="button" onclick="location.href='./board?sv=delete&bno=${bvo.bno}'"
 								class="btn btn-outline-info">삭제</button>
+								</c:when>
+								<c:otherwise>
+								<button type="button" onclick="alert('본인이 작성한 글만 수정할 수 있습니다.');return false;"
+								class="btn btn-outline-info">수정</button>
+								<button type="button" onclick="alert('본인이 작성한 글만 삭제할 수 있습니다.');return false;"
+								class="btn btn-outline-info">삭제</button>
+								</c:otherwise>
+								</c:choose>
 						</div>
 					</div>
 				</div>

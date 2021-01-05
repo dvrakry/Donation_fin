@@ -9,8 +9,8 @@
 	</insert>
 	
 	<insert id="add_m" parameterType="cvo">
-		insert into don_comment (mno, writer, comment)
-		values (#{ino}, #{writer}, #{comment})
+		insert into don_comment (mno, bno, writer, comment)
+		values (#{ino}, #{bno}, #{writer}, #{comment})
 	</insert>
 	
 	
@@ -20,13 +20,16 @@
 	
 	<select id="list" parameterType="java.lang.Integer" resultType="cvo">
 		select * from don_comment
+		where ino=#{ino}
 		order by cregdate desc
 	</select>
 	
 	
 	<select id="list_m" parameterType="java.lang.Integer" resultType="cvo">
 		select * from don_comment
+		where bno = #{bno}
 		order by cregdate desc
+		
 	</select>
 	
 	

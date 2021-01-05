@@ -10,6 +10,6 @@ public interface CommentService {
 	public int modify(CommentVO cvo);
 	public int remove(Integer cno);
 	
-	public List<CommentVO> getList_m(int mno);
+	public List<CommentVO> getList_m(int mno, int bno);
 	public int add_m(CommentVO cvo);
 }

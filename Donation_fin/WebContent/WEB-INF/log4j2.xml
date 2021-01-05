@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" monitorInterval="30">
    <Properties>
-      <Property name="baseDir">C:/_java/_jsp/workspace/Donation/logDir</Property>
+      <Property name="baseDir">/usr/local/apache-tomcat-8.5.61/webapps/logDir</Property>
    </Properties>
    <Appenders>
       <Console name="Console" target="SYSTEM_OUT">
