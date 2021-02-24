@@ -1,2 +1,2 @@
-# Donation_fin
+# JSP 팀 프로젝트
 JSP 팀 프로젝트 입니다
